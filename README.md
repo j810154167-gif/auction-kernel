@@ -54,9 +54,10 @@ Hermes只能：数据组织 → 排序/分区/标签
 ## fable5 应该做什么
 
 1. **先读 `fable5/README.md`** — 仓库过滤器 + 硬约束
-2. **再读 `fable5/PROBLEM.md`** — 困境全文
-3. **在 `exchange/questions/` 提问** — 任何需要澄清或深入的问题
-4. **不要优化代码** — kernel.py 和 old_scoring_engine.py 只是让你理解两版长什么样，不是让你改
+2. **再读 `fable5/PROBLEM.md`** — 困境全文、与虎谋皮、进攻防守循环
+3. **参考防守代码** — `defense_zone.py` / `defense_breach.py` / `defense_sector.py`。这是一个已工作的人机模型：人做判断，机器做窄检测，规则有博弈逻辑支撑。理解它的边界，有助于理解进攻为什么失败
+4. **在 `exchange/questions/` 提问** — 任何需要澄清或深入的问题
+5. **不要优化代码** — 本仓库所有 .py 都是参考资料，不是待改进目标
 
 ---
 
@@ -68,6 +69,9 @@ Hermes只能：数据组织 → 排序/分区/标签
 ├── ROLES.md                  ← 三方角色与交互协议
 ├── kernel.py                 ← 新内核（参考）
 ├── old_scoring_engine.py     ← 老内核 chg×3（参考）
+├── defense_zone.py           ← 防守 L0 区间（参考：已工作的人机模型）
+├── defense_breach.py         ← 防守 L2 破位检测
+├── defense_sector.py         ← 防守 L1 题材方向
 ├── fable5/
 │   ├── README.md             ← 先读这个
 │   └── PROBLEM.md            ← 困境全文
