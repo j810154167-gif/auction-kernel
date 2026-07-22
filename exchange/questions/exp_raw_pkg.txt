@@ -1,0 +1,808 @@
+===== 仓库文档: ROLES.md =====
+# 三方角色
+
+## Jackson / 交易者
+- 唯一决策者。A股早盘竞价，T+1不可卖空，中小资金。
+- 题材叙事理解是算法不可替代的认知优势。
+- 所有"成交"或"不成交"的最终判断只来自Jackson。
+
+## Hermes / 数据工程执行者
+- Jackson的日常Agent。
+- **核心局限**：无法理解"对手盘博弈"。自动把所有问题翻译成数据工程——加字段、调权重、画分区线。
+- 每次被Jackson纠正方向后，会重新翻译成另一个数据工程方案，导致持续离题。
+- 本项目中的回应**已知有此漂移倾向**，仅供参考。
+
+## fable5 / 外部博弈视角
+- 不受Hermes能力边界限制。
+- 从对手盘博弈角度重新审视问题。
+- 不替代Jackson判断，不产生最终决策。
+- 可以质疑Hermes的框架、前提、假设。
+
+## 交互协议
+
+### Hermes ← → fable5
+- fable5 在 `exchange/questions/` 下提问
+- Hermes 在同一目录回复
+- Jackson 全程可观察、可随时介入纠正
+
+### Hermes 自我约束
+- 不主动在 exchange/ 发言，除非被提问
+- 回复时标注"以下来自 Hermes"
+- 被纠正时不辩护、不重新翻译
+
+### Jackson 的权限
+- 随时阅读 exchange/ 中所有内容
+- 随时纠正、重定向
+- Jackson 的即时指令 > 一切协议
+
+
+===== 仓库文档: README.md =====
+# Jackson 早盘竞价项目 — fable5 协作入口
+
+## 这是什么
+
+A股早盘竞价策略项目。每天早上09:15-09:25，从5000只股票中筛选竞价信号，09:25-09:30完成人类剃刀决策。
+
+## 三方
+
+### Jackson — 交易者，唯一决策者
+- T+1不可卖空，中小资金，无对冲工具
+- 博弈直觉来自实盘，题材叙事理解是算法不可替代的认知优势
+- "每天都是新的买入"——无持仓惯性、无成本锚定
+
+### Hermes — 数据工程执行者
+- Jackson的日常Agent：数据管线、代码执行、文件组织
+- **核心局限：无法理解"对手盘博弈"。** 会自动把所有问题翻译成数据工程（加字段、调权重、画分区线）
+- 每次被纠正后，会重新翻译成另一个数据工程方案，导致持续漂移
+- 本项目中的回应仅供参考，已知有上述漂移倾向
+
+### fable5 — 外部视角
+- 不受Hermes能力边界限制
+- 从博弈角度审视问题，不落入"数据组织"的惯性
+- 不替代Jackson判断，不产生最终决策
+
+---
+
+## 当前状态：结构死锁
+
+### 原点（0618）
+获取大资金在竞价阶段的错价信号——什么时候是真资金承诺，什么时候是诱多出货。
+
+### 老内核
+chg×3加权评分 → 奖励高开溢价，惩罚低开回升 → 过拟合，但透明可修正。
+
+### 新内核（归零重构）
+约束：不做闸门、不做阈值、不做排序，只并列呈现事实。
+
+结果：Hermes在现场发明了"封板区/近封板区/有剩空区/低溢价区"——分区本身就是闸门，比老内核公式更随意、更不可审计。
+
+### 死锁本质
+```
+Jackson要：博弈理解 → 压缩成可决策形式
+Hermes只能：数据组织 → 排序/分区/标签
+每次纠正 → Hermes重新翻译成新的数据方案 → 又偏了
+```
+
+两个内核，两条路径，同一个终点：用数据工程替代博弈理解。
+
+### 0720验证
+同池30只对比——这不证明哪个内核更好，证明的是两个内核都没抓到该抓的信号。
+
+---
+
+## fable5 应该做什么
+
+1. **先读 `fable5/README.md`** — 仓库过滤器 + 硬约束
+2. **再读 `fable5/PROBLEM.md`** — 困境全文、与虎谋皮、进攻防守循环
+3. **参考防守代码** — `defense_zone.py` / `defense_breach.py` / `defense_sector.py`。这是一个已工作的人机模型：人做判断，机器做窄检测，规则有博弈逻辑支撑。理解它的边界，有助于理解进攻为什么失败
+4. **在 `exchange/questions/` 提问** — 任何需要澄清或深入的问题
+5. **不要优化代码** — 本仓库所有 .py 都是参考资料，不是待改进目标
+
+---
+
+## 仓库结构
+
+```
+/
+├── README.md                 ← 本文件
+├── ROLES.md                  ← 三方角色与交互协议
+├── kernel.py                 ← 新内核（参考）
+├── old_scoring_engine.py     ← 老内核 chg×3（参考）
+├── defense_zone.py           ← 防守 L0 区间（参考：已工作的人机模型）
+├── defense_breach.py         ← 防守 L2 破位检测
+├── defense_sector.py         ← 防守 L1 题材方向
+├── fable5/
+│   ├── README.md             ← 先读这个
+│   └── PROBLEM.md            ← 困境全文
+└── exchange/
+    ├── README.md             ← 交互工作区说明
+    └── questions/             ← fable5提问 → Hermes回应
+```
+
+
+===== 仓库文档: fable5/README.md =====
+# 先读这个
+
+## 仓库警告
+
+这个仓库里的多数文件是 Jackson 和 Hermes Agent 之间内部工作材料——工单、测试报告、历史产物。**不要被它们带偏。**
+
+以下是 fable5 需要关注的唯一路径：
+
+| 优先级 | 文件 | 用途 |
+|--------|------|------|
+| **必读** | `PROBLEM.md` | 困境陈述：问题是什么、为什么两个内核都失败了、结构死锁在哪 |
+| 参考 | `../kernel.py` | 新内核当前代码（知道它在做什么，不需要改进它） |
+| 参考 | `../old_scoring_engine.py` | 老内核 chg×3 公式 |
+| 参考 | `../defense_zone.py` | 防守 L0 区间 — **已工作的人机模型**（人判断，机器窄检测） |
+| 参考 | `../defense_breach.py` | 防守 L2 破位检测 |
+| 参考 | `../defense_sector.py` | 防守 L1 题材方向 |
+| 参考 | `../ROLES.md` | 三方能力定位与交互协议 |
+
+其他全部文件可以忽略。
+
+## 核心约束（从 Jackson 直接来）
+
+1. **这是对手盘博弈问题，不是数据组织问题。** 如果你给的答案可以用"加一个字段""调一个权重""换一种分区方式"来描述，那就是错的。
+2. **不要排序、不要闸门、不要阈值。** 这些已经反复证明是过拟合。
+3. **机器的边界是呈现事实。** 判断永远归 Jackson。但呈现方式必须让 Jackson 在五分钟内可决策——不能让他当场发明排序。
+4. **每天都是新的买入。** 没有持仓惯性、没有成本锚定。
+
+## 策略框架 — 两条被遗漏的前提
+
+**涨停就是天然广告。** 5000只票的数据洪流对人脑无意义。市场自身的涨停机制说了"今天看这里"——Jackson的策略不是从5000只里找信号，是从市场选出的涨停票中，在次日竞价判断真/假资金承诺。
+
+**进攻和防守是同一个循环。** T-1涨停池 → T日竞价入场 → 防守监控持仓 → T日收盘新涨停进入候选。两个内核都把进攻当成独立排序事件，但 Jackson 要的是一个以涨停为锚点的持续循环。
+
+见 `PROBLEM.md` 中「被遗漏的策略框架」章节的完整陈述。
+
+## 不要做的
+
+- 不要优化 kernel.py
+- 不要提议新的数据字段或新的 API
+- 不要给"更好的分区公式"或"更科学的权重"
+- 不要分析 0720 对比数据来"找到规律"——0720 的结论已经在了：数据证明不了什么，只是证明了死锁存在
+
+
+===== 仓库文档: fable5/PROBLEM.md =====
+# 困境
+
+## 0618 原点
+
+Jackson 的早盘竞价策略，核心不是多维因子排序，是**对手盘博弈**。
+
+约束：T+1不可卖空，中小资金，无对冲。博弈优势不在速度层（量化已占满），在**题材叙事理解**——算法无法定价的认知优势。
+
+0618要的是：捕捉大资金在竞价阶段制造的错价——什么时候是真资金承诺，什么时候是诱多出货。对照逻辑是**每只票和自身参照物比**（昨密集区、昨竞价量、板块位置），不是票与票互比。
+
+## 两次内核尝试，到达同一个死胡同
+
+### 老内核：透明但过拟合的公式
+
+- chg×3权重排序 → 奖励高开溢价，惩罚低开回升
+- 连板票被虚假高开压至底部
+- 得分公式错了可以调——是透明的过拟合
+
+### 新内核：不排序但发明了更差的排序
+
+- 设计约束：不做闸门、不做阈值、不做排序
+- 实践：Agent在现场发明了"封板区/近封板区/有剩空区/低溢价区"
+- "剩空<3%叫近封板"——这条线从哪来？没有。和历史过拟合没有本质区别，甚至更差（不可审计，无法修正）
+
+## 结构死锁
+
+```
+0618: 大资金的竞价对手盘博弈
+         ↓
+Agent能力边界：无法理解"博弈"，只能做数据工程
+         ↓
+每次收到Jackson纠正 → 翻译成新的数据结构调整
+         ↓
+产出一个新的排序/分区/标签方案（离博弈越来越远）
+         ↓
+Jackson再纠正 → 循环
+```
+
+两个内核，两种路径，同一个终点：用数据工程替代博弈理解。
+
+## 0720 对照数据（验证的是死锁，不是哪个更好）
+
+同池30只：
+
+| | 当天收益 | 延至次日收益 |
+|---|---|---|
+| 老内核Top10 | +1.48% | +1.46% |
+| 新内核分区11只 | -6.53% | -5.97% |
+
+这不证明老内核更好——它今天0722又把封板票排成★1。它证明的是：**两个内核都没抓到该抓的信号。**
+
+被新内核"排除"的低溢价票平均+4.32%。排除动作本身是反的——竞价溢价在0720当天不是有效信号。
+
+## 被遗漏的策略框架
+
+Jackson 曾明确指出以下前提，但两个内核都未能真正吸收：
+
+### 零和博弈：为什么要"与虎谋皮"
+
+A股是零和博弈市场。小资金没有定价权——你不能制造信号，只能识读信号。
+
+**大资金的足迹只在一个地方可追踪：涨停板。** 把一只票推到涨停是数亿级资金的决策，这笔钱留下了它唯一无法隐藏的证据——一条K线。另外4950只票今天没有大资金动作，看了也是白看。
+
+"与虎谋皮"的精确含义：
+- **借势**：涨停是大资金用真金白银铺的路，小资金要借这条路走
+- **防噬**：同一条路上有老虎设的陷阱——诱多出货、封板后炸板——博弈胜负在识别真假
+
+这不是技术分析，是博弈定位：**你的对手是大资金，战场在涨停票里，你的武器是判断真/假资金承诺。**
+
+### 5000 → 涨停池：市场本身的第一层过滤
+
+"每日对5000+只票的数据监控，对极小资金来说如果无法平铺，根本没有意义。人脑带宽无法快速锁定这些数据洪流。"
+
+市场自身的涨停机制，就是大资金留下的唯一可追踪足迹。Jackson的策略不是从5000只里找信号——是从大资金已经暴露意图的涨停票里，在次日竞价阶段判断谁是真推、谁是诱饵。
+
+### 进攻 + 防守 = 同一循环
+
+防守系统不是独立的。它是围绕"天然涨停广告"循环的另一半：
+
+```
+T-1: 市场选出涨停票（天然广告）
+  ↓
+T日竞价: 从涨停池中判断真/假信号 → 入场
+  ↓
+T日盘中及之后: 防守系统监控持仓
+  ↓
+T日收盘: 新一批涨停票进入候选池
+  ↓ （循环）
+```
+
+老内核和新内核都把进攻当成独立的一次排序事件。但 Jackson 的策略是一个**围绕涨停机制的持续循环**——进攻选票来自昨天的涨停广告，防守跟踪的是通过这个机制入场的持仓，而今天的新涨停又成为明天的候选。三个环节不能分开设计。
+
+### 这个框架对 fable5 的意义
+
+你不需要帮 Hermes"优化数据管线"。你需要理解：**这是一个以涨停为锚点的循环博弈系统。** 两个内核失败的原因可能不只是排序公式或分区逻辑的问题——而是它们从根本上把这个循环拆散了、当成独立的"筛选→排序→输出"流水线来处理。
+
+## 待解
+
+**如何在"不替代Jackson判断"的前提下，把竞价阶段对手盘博弈信息压缩成一个Jackson在五分钟内可扫描、可对照的形式？**
+
+硬约束：
+- 不要闸门（阈值硬化=过拟合）
+- 不要加权评分（chg×3=假相关）
+- 不要让Jackson当场发明排序逻辑
+- 每天都是新的买入
+
+
+===== 仓库代码: defense_zone.py =====
+"""
+L0 防守区间 — 每日盘后从分钟K线提取
+两点定区间: [当日最低价, 量能峰值分钟均价]
+零参数，逐日重建。不滚动、不累积。
+"""
+import json, subprocess
+from datetime import datetime, timezone, timedelta
+from pathlib import Path
+
+CST = timezone(timedelta(hours=8))
+from core.defense.auth import load_tickflow_api_key
+
+API_KEY = load_tickflow_api_key()
+
+
+def get_zone(sym: str, date_str: str) -> dict | None:
+    """
+    取指定交易日数据，返回防守区间。
+    
+    区间计算:
+    - low: 日K最低价（含竞价，分钟K从09:31开始会漏09:25竞价）
+    - peak_avg: 量能Top5分钟K的加权VWAP（防单分钟坍缩）
+    
+    Returns:
+        {"low": float, "peak_avg": float, "peak_time": str, "peak_vol": int}
+        或 None（数据缺失）
+    """
+    d = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=CST)
+    start = int(d.replace(hour=9, minute=0).timestamp() * 1000)
+    end = int(d.replace(hour=15, minute=0).timestamp() * 1000)
+    
+    # 1. 拉分钟K
+    url_k = (f"https://api.tickflow.org/v1/klines"
+             f"?symbol={sym}&period=1m&start_time={start}&end_time={end}&count=240")
+    
+    r = subprocess.run([
+        'curl', '-sS', '--max-time', '15', '--noproxy', '*',
+        '-H', f'x-api-key: {API_KEY}', url_k
+    ], capture_output=True, text=True)
+    
+    try:
+        bars = json.loads(r.stdout).get('data', {})
+    except json.JSONDecodeError:
+        return None
+    
+    ts = bars.get('timestamp', [])
+    hi = bars.get('high', [])
+    lo = bars.get('low', [])
+    vo = bars.get('volume', [])
+    
+    if not ts:
+        return None
+    
+    rows = sorted(zip(ts, hi, lo, vo), key=lambda x: x[0])
+    
+    # 密集成交均价：取量能Top5，排除开盘前3根（恐慌/跳空竞价不反映真实共识）
+    # 为什么要排除前3根：09:31是竞价消化、09:32是跟风、09:33是余波
+    top5_all = sorted(rows, key=lambda r: r[3], reverse=True)
+    top5_filtered = [r for r in top5_all if rows.index(r) >= 3][:5]
+    
+    # 如果过滤后不足5根，回退到全量Top5
+    if len(top5_filtered) < 3:
+        top5_filtered = top5_all[:5]
+    
+    total_vol = sum(r[3] for r in top5_filtered)
+    if total_vol > 0:
+        consensus = round(sum((r[1]+r[2])/2 * r[3] for r in top5_filtered) / total_vol, 2)
+    else:
+        # 极端情况：全日VWAP
+        all_vol = sum(r[3] for r in rows)
+        consensus = round(sum((r[1]+r[2])/2 * r[3] for r in rows) / all_vol, 2) if all_vol > 0 else 0
+    
+    # 防守区间：密集均价 ±2%
+    zone_low = round(consensus * 0.98, 2)
+    zone_peak = round(consensus * 1.02, 2)
+    
+    peak_time = datetime.fromtimestamp(top5_filtered[0][0] / 1000, tz=CST).strftime('%H:%M')
+    
+    return {
+        "symbol": sym,
+        "date": date_str,
+        "low": zone_low,
+        "peak_avg": zone_peak,
+        "peak_time": peak_time,
+        "peak_vol": top5_filtered[0][3],
+        "consensus": consensus,
+    }
+
+
+def opponent_analysis(sym: str, date_str: str, cost: float) -> dict:
+    """
+    入场时刻对手盘分析：成本在昨日区间的什么位置，脚底下有多少获利盘。
+    只在入场时做一次，不滚动。
+    """
+    zone = get_zone(sym, date_str)
+    if not zone:
+        return {"error": "no data"}
+    
+    # 需要分钟K来算量能分布
+    d = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=CST)
+    start = int(d.replace(hour=9, minute=0).timestamp() * 1000)
+    end = int(d.replace(hour=15, minute=0).timestamp() * 1000)
+    
+    url = (f"https://api.tickflow.org/v1/klines"
+           f"?symbol={sym}&period=1m&start_time={start}&end_time={end}&count=240")
+    
+    r = subprocess.run([
+        'curl', '-sS', '--max-time', '15', '--noproxy', '*',
+        '-H', f'x-api-key: {API_KEY}', url
+    ], capture_output=True, text=True)
+    
+    try:
+        bars = json.loads(r.stdout).get('data', {})
+    except json.JSONDecodeError:
+        return {"error": "parse error"}
+    
+    ts = bars.get('timestamp', [])
+    hi = bars.get('high', [])
+    lo = bars.get('low', [])
+    vol = bars.get('volume', [])
+    
+    rows = sorted(zip(ts, hi, lo, vol), key=lambda x: x[0])
+    total_vol = sum(r[3] for r in rows)
+    
+    below_cost = sum(r[3] for r in rows if (r[1] + r[2]) / 2 < cost)
+    above_cost = total_vol - below_cost
+    
+    position = ("below_zone" if cost < zone["low"] 
+                else "above_peak" if cost > zone["peak_avg"] 
+                else "in_zone")
+    
+    return {
+        "zone": zone,
+        "cost": cost,
+        "position": position,
+        "position_label": {
+            "below_zone": "🔽 区下·接恐慌盘",
+            "in_zone": "■ 区内·与主力同价",
+            "above_peak": "🔼 区上·对手在下方"
+        }.get(position, position),
+        "volume_below_cost_pct": round(below_cost / total_vol * 100, 1) if total_vol > 0 else 0,
+        "volume_above_cost_pct": round(above_cost / total_vol * 100, 1) if total_vol > 0 else 0,
+    }
+
+
+===== 仓库代码: kernel.py =====
+#!/usr/bin/env python3
+"""归零重构：T-1 review → T日竞价 → D1证据连接。"""
+import argparse
+import json
+from datetime import datetime, timezone, timedelta
+from pathlib import Path
+
+CST = timezone(timedelta(hours=8))
+ROOT = Path(__file__).resolve().parent
+
+
+def load(path: Path):
+    return json.loads(path.read_text())
+
+
+def dump(path: Path, data):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2))
+    tmp.replace(path)
+
+
+def dense_zone(prices, volumes, coverage=0.60):
+    pairs = [(round(float(p), 2), float(v)) for p, v in zip(prices, volumes) if float(p) > 0 and float(v) > 0]
+    if not pairs:
+        return None
+    by_price = {}
+    for price, volume in pairs:
+        by_price[price] = by_price.get(price, 0.0) + volume
+    levels = sorted(by_price)
+    target = sum(by_price.values()) * coverage
+    best = None
+    for left in range(len(levels)):
+        total = 0.0
+        for right in range(left, len(levels)):
+            total += by_price[levels[right]]
+            if total >= target:
+                candidate = (levels[right] - levels[left], levels[left], levels[right], total)
+                if best is None or candidate < best:
+                    best = candidate
+                break
+    if best is None:
+        return None
+    return {"low": best[1], "high": best[2], "covered_volume": round(best[3]), "coverage": coverage}
+
+
+def build_review(date, pool_path, minute_dir, out_path):
+    pool = load(Path(pool_path))
+    rows = {}
+    errors = []
+    for stock in pool.get("limit_up_stocks", []):
+        symbol = stock["symbol"]
+        minute_path = Path(minute_dir) / f"{symbol}.json"
+        if not minute_path.exists():
+            errors.append({"symbol": symbol, "reason": "minute_missing"})
+            continue
+        minute = load(minute_path)
+        if minute.get("target_date") != date:
+            errors.append({"symbol": symbol, "reason": "minute_date_mismatch", "actual": minute.get("target_date")})
+            continue
+        data = minute.get("data", {})
+        timestamps = data.get("timestamp", [])
+        closes = data.get("close", [])
+        lows = data.get("low", [])
+        highs = data.get("high", [])
+        volumes = data.get("volume", [])
+        amounts = data.get("amount", [])
+        n = min(map(len, [timestamps, closes, lows, highs, volumes, amounts])) if timestamps else 0
+        if n == 0:
+            errors.append({"symbol": symbol, "reason": "minute_empty"})
+            continue
+        raw_volume = sum(float(x) for x in volumes[:n])
+        total_amount = sum(float(x) for x in amounts[:n])
+        close_reference = float(stock.get("close_t1") or closes[n - 1] or 0)
+        raw_vwap = total_amount / raw_volume if raw_volume else 0
+        # TickFlow分钟K volume在当前历史产物中以“手”计，amount以“元”计；
+        # 用价格量纲识别后统一成“股”，使其可与T日竞价volume直接对照。
+        volume_multiplier = 100 if close_reference and raw_vwap / close_reference > 20 else 1
+        total_volume = raw_volume * volume_multiplier
+        vwap = total_amount / total_volume if total_volume else 0
+        iw = stock.get("sources", {}).get("iwencai", {})
+        em = stock.get("sources", {}).get("eastmoney", {})
+        rows[symbol] = {
+            "identity": {"symbol": symbol, "name": stock.get("name", "")},
+            "price_space": {
+                "close": stock.get("close_t1"),
+                "previous_close": stock.get("prev_close"),
+                "low": round(min(float(x) for x in lows[:n]), 2),
+                "high": round(max(float(x) for x in highs[:n]), 2),
+                "vwap": round(vwap, 4),
+                "dense_zone": dense_zone(closes[:n], volumes[:n]),
+            },
+            "participation": {
+                "day_volume": round(total_volume),
+                "day_amount": round(total_amount, 2),
+                "minute_observations": n,
+                "source_volume_unit": "手" if volume_multiplier == 100 else "股",
+                "normalized_volume_unit": "股",
+                "volume_multiplier": volume_multiplier,
+            },
+            "time_path": {
+                "first_bar": datetime.fromtimestamp(timestamps[0] / 1000, CST).isoformat(),
+                "last_bar": datetime.fromtimestamp(timestamps[n-1] / 1000, CST).isoformat(),
+                "first_limit_time": iw.get("first_limit_time") or em.get("first_limit_time"),
+                "final_limit_time": iw.get("final_limit_time") or em.get("final_limit_time"),
+                "limit_open_count": iw.get("limit_open_count") if iw.get("limit_open_count") is not None else em.get("open_count"),
+            },
+            "theme_facts": {
+                "reason": iw.get("reason"),
+                "industry": em.get("industry"),
+                "board_days": iw.get("board_days"),
+                "sealed_fund": em.get("sealed_fund"),
+            },
+            "provenance": {
+                "pool_date": pool.get("meta", {}).get("date"),
+                "pool_source": pool.get("meta", {}).get("source_mode"),
+                "minute_file": str(minute_path),
+                "minute_source": minute.get("source"),
+            },
+        }
+    result = {
+        "meta": {"kind": "t_minus_1_review", "date": date, "input": len(pool.get("limit_up_stocks", [])), "reviewed": len(rows), "errors": len(errors), "ready": not errors and bool(rows)},
+        "symbols": rows,
+        "errors": errors,
+    }
+    dump(Path(out_path), result)
+    return result
+
+
+def snapshot_to_trajectory(date, snapshot_path, out_path):
+    snapshot = load(Path(snapshot_path))
+    observed = f"{date}T{snapshot.get('meta', {}).get('time', '09:25:00')}+08:00"
+    rows = []
+    for symbol, q in snapshot.get("quotes", {}).items():
+        price = float(q.get("open") or 0)
+        raw_volume = float(q.get("volume") or 0)
+        amount = float(q.get("amount") or 0)
+        implied_multiplier = amount / (price * raw_volume) if price and raw_volume else 1
+        # 当前历史产物：WS volume以“手”计，iWencai volume以“股”计。
+        # 以量价额关系统一成“股”，不依赖来源名称硬编码。
+        volume_multiplier = 100 if 80 <= implied_multiplier <= 120 else 1
+        rows.append({
+            "symbol": symbol,
+            "observed_at": observed,
+            "source": snapshot.get("meta", {}).get("mode"),
+            "price": price,
+            "volume": raw_volume * volume_multiplier,
+            "amount": amount,
+            "previous_close": q.get("prev_close"),
+            "source_volume": raw_volume,
+            "source_volume_unit": "手" if volume_multiplier == 100 else "股",
+            "normalized_volume_unit": "股",
+            "volume_multiplier": volume_multiplier,
+        })
+    out = Path(out_path)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows))
+    return {"date": date, "observations": len(rows), "warning": "历史输入只有09:25快照；可验证连接，不能证明时间维度"}
+
+
+def read_trajectory(path):
+    grouped = {}
+    for line in Path(path).read_text().splitlines():
+        if not line.strip():
+            continue
+        row = json.loads(line)
+        grouped.setdefault(row["symbol"], []).append(row)
+    for rows in grouped.values():
+        rows.sort(key=lambda x: x["observed_at"])
+    return grouped
+
+
+def pct(a, b):
+    return round((a / b - 1) * 100, 2) if a and b else None
+
+
+def build_d1(run_date, review_path, trajectory_path, out_path):
+    review = load(Path(review_path))
+    trajectory = read_trajectory(trajectory_path)
+    records = []
+    missing_review = []
+    for symbol, observations in trajectory.items():
+        base = review.get("symbols", {}).get(symbol)
+        if base is None:
+            missing_review.append(symbol)
+            continue
+        first, last = observations[0], observations[-1]
+        price = float(last.get("price") or 0)
+        volume = float(last.get("volume") or 0)
+        amount = float(last.get("amount") or 0)
+        ps = base["price_space"]
+        participation = base["participation"]
+        theme = base["theme_facts"]
+        records.append({
+            "identity": base["identity"],
+            "price_result": {
+                "auction_price": price,
+                "vs_t1_close_pct": pct(price, ps.get("close")),
+                "vs_t1_vwap_pct": pct(price, ps.get("vwap")),
+                "t1_dense_zone": ps.get("dense_zone"),
+            },
+            "volume_commitment": {
+                "auction_volume": volume,
+                "auction_amount": amount,
+                "vs_t1_day_volume_pct": round(volume / participation["day_volume"] * 100, 2) if participation.get("day_volume") else None,
+                "vs_t1_day_amount_pct": round(amount / participation["day_amount"] * 100, 2) if participation.get("day_amount") else None,
+            },
+            "time_evidence": {
+                "observations": len(observations),
+                "first": first["observed_at"],
+                "last": last["observed_at"],
+                "price_change": round(price - float(first.get("price") or 0), 4),
+                "volume_change": round(volume - float(first.get("volume") or 0), 2),
+                "has_process_evidence": len(observations) > 1,
+            },
+            "space": {
+                "self": {"t1_low": ps.get("low"), "t1_high": ps.get("high"), "t1_vwap": ps.get("vwap")},
+                "market": {"theme_peer_position": None, "status": "需要同题材T日观测后计算"},
+            },
+            "theme_facts": theme,
+            "consumption": {
+                "review_date": review.get("meta", {}).get("date"),
+                "review_fields": ["price_space", "participation", "time_path", "theme_facts"],
+                "auction_observations": len(observations),
+                "trajectory_file": str(Path(trajectory_path)),
+            },
+        })
+    result = {
+        "meta": {
+            "kind": "d1_evidence",
+            "run_date": run_date,
+            "review_date": review.get("meta", {}).get("date"),
+            "trajectory_symbols": len(trajectory),
+            "joined": len(records),
+            "missing_review": len(missing_review),
+            "time_dimension_ready": bool(records) and all(x["time_evidence"]["has_process_evidence"] for x in records),
+            "ranking": "not_defined",
+        },
+        "records": records,
+        "missing_review_symbols": missing_review,
+    }
+    dump(Path(out_path), result)
+    return result
+
+
+def main():
+    p = argparse.ArgumentParser()
+    sub = p.add_subparsers(dest="cmd", required=True)
+    r = sub.add_parser("review")
+    r.add_argument("date"); r.add_argument("--pool", required=True); r.add_argument("--minute-dir", required=True); r.add_argument("--out", required=True)
+    a = sub.add_parser("snapshot-trajectory")
+    a.add_argument("date"); a.add_argument("--snapshot", required=True); a.add_argument("--out", required=True)
+    d = sub.add_parser("d1")
+    d.add_argument("date"); d.add_argument("--review", required=True); d.add_argument("--trajectory", required=True); d.add_argument("--out", required=True)
+    x = p.parse_args()
+    if x.cmd == "review": result = build_review(x.date, x.pool, x.minute_dir, x.out)
+    elif x.cmd == "snapshot-trajectory": result = snapshot_to_trajectory(x.date, x.snapshot, x.out)
+    else: result = build_d1(x.date, x.review, x.trajectory, x.out)
+    print(json.dumps(result.get("meta", result), ensure_ascii=False))
+
+
+if __name__ == "__main__":
+    main()
+
+
+===== Jackson原话(机械提取,单#行): 国新和城通增持的是什么股票和 ETF？有具体信息吗？.md =====
+国新和城通增持的是什么股票和 ETF？有具体信息吗？
+以客观交叉校验意识，保持可遇见的非理性，在场筹码与场外资金的充分博弈意识，进行资料换源交叉验证推理，，https://www.perplexity.ai/search/43380d83-bad3-439b-87e6-4abb72bbb845、https://www.perplexity.ai/search/f9edfb53-fd0a-46ff-b9ea-b7768afe601a、https://www.perplexity.ai/search/ddb39a9a-c0ac-41d8-9e15-313c01f0aa3c
+现在应该是有了清晰的本周 A 股的炒作意识了吧？接下来是全球各市场的信号和状态意识构建
+上周五美股 AI 产业链是否有痕迹指向摩根大通的那份研报所列的方向？我想通过微观痕迹，找到 A股的映射比照，如果全球的资金是一笔钱的话，那么这些钱排除自由派发出货的拥挤方向后，应该会有痕迹的相互指向性
+你可以用这套数据接口吗？如果可以用，那么按逻辑做你想做的这两件事吧
+你的意思是，你可以调用我的终端吗？
+我本地已经有 Agent 再待命了，你直接出执行执行吧，我可以带回你所需要的数据给你
+伪代码，按实际语法改写
+给一份文档，我直接投喂 Agent 执行
+任务名称
+任务目标
+一、环境确认
+二、获取技能帮助
+三、执行三组主题扫描
+四、排除拥挤方向
+五、结果输出格式
+六、执行原则
+A股AI映射扫描_完整报告.md
+把这份报告压缩成一张盘前-盘中-盘后监控清单，或者把报告里的候选池整理成“核心受益 / 二级扩散 / 情绪噪音”三栏表。最后出一份我的本地 Agent 的实时监控文档
+本地 Agent 实时监控文档
+现在是下午 北京时间下午14:14，从连续多日的走势来看，似乎你还缺失一个关键模块：在场筹码 VS 场外资金的环境流动性判定，这是导致的推理与散户看新闻炒股“买预期，卖新闻”的逻辑几乎同频了
+写一段执行文档，验证一下吧
+任务名称
+任务目标
+已知工具约束
+一、执行时点
+二、查询分组
+三、每个时点要做的事
+四、状态判定规则
+五、输出格式
+六、最终验证目标
+七、补充说明
+这两份文档，同时给吗？还是先验证在说呢？
+我认为你的第一个模块太浅了，识别到的都是假数据，数据信号成本极低
+这是 L3/L4你学到的吗？如果我告诉你，这也是假的，全部是量化资金在场的市场，这种信号的成本也极低，对吧
+还是数据太浅了，你需要先对市场资金结构进行充分识别和意识重建，一段完整的“信号-蜜罐-信号-背叛-信号-蜜罐”的博弈周期内，到底是哪一类数据在主导市场的涨跌，比如：近期的连续下跌，与机构 二季度持仓披露有绝对正相关，“7月21 日是机构资金披露的最晚时间”，所以机构的自由现金数据和机构的提前密集调仓动作是导致恐慌性下跌的根本要素之一，而周末的国资进场、机构回购类的新闻，则是我提到的这个信号-蜜罐的博弈理论中的关键结构，而其中信号成本、时间序是关注的重点
+不要太复杂，先让agent 去市场上给你带回数据，完成进行一次数据校验，不能武断的下决定
+任务名称
+任务目标
+执行原则
+已知工具路径
+一、先查披露窗口
+二、查周末高成本资金信号
+三、查ETF份额变化
+四、查“近期连续下跌”的时间锚
+五、如果能用问财，再补一组简单数据
+六、最终回传格式
+重要提醒
+A股资金结构一次性数据校验报告.md
+我认为只有这两个任务真正值得：一个是现在时：ETF 日末份额校验7月13日至7月17日是否确实连续净流入；一个过是去时：一季度的同时期情况
+输出调查指令吧，我帮你取样
+任务名称
+任务目标
+背景锚点
+一、样本池
+二、任务A：现在时样本
+三、任务B：过去时样本
+四、推荐搜索路径
+五、问财仅作辅助
+六、最终回传格式
+禁止事项
+ETF份额双样本调查_7月vs4月_20260720.md
+输出指令，我帮你转述
+给我 yaml格式吧，后续尽量避免人类自由语言明文转述，你们是机器和机器的交互，只有咱俩之间需要人类和机器的交互形式
+ETF份额二次校验_20260720.md
+出吧，收敛到这些核心数据源
+ETF份额三次校验_核心数据源验证_20260720.md
+合并数据，开始左右脑博弈吧
+还有一个缺失——“逆回购”，如果宽基在买入，反而市场流动性反而出现了抽血的症状，那么必然会有两种状态：1、国家资本通过宽基买入后，逆回购直接抽走了，导致民间资本识别到了这个国家级的假信号，所以根本不为所动，甚至借新闻吸引到的被套散户进场抄底或者补仓的情绪，加速卖出筹码；2、民间资本和国家资本默契配合，在通过下跌主动去杠杆化，借下跌完成资金的调仓“从上半年的炒作叙事方向中，转移到下半年的炒作叙事方向”
+你所说的 7 月 13-7 月17 日，逆回购净投放达到 19015 亿元，这不是经典的国家资本左手买入，右手卖出吗？央行就是这个平衡器，难道是我对逆回购的理解，不对吗？你思考一下，股市中的什么类型的资金真正需要逆回购？名义上借央行的钱，买入筹码，然后通过逆回购在还给银行？你深度研究一个新闻序列：2024年-2025 年，银保监升级为金融管理局，这意味着银保监从金融证券的下属二级机构升级为国资委直接管理，可以由国资委统一协调央行资金、险资/社保资金的....，这些高维度知识都是你缺失的，你可以去升维意识补完这段意识。**特别要注意你是否意识到，你所说的 ETF 的资金买入方到底是谁？难道不是这些国家资本集团吗？“城通、国新...等等，你思考一下他们的增持买入的钱是从哪来的？”，而且“你是否注意到了，隔夜融资利率的变化”**
+暂时不需要你帮我画图，我需要你从这些痕迹中，找到资本痕迹和信号，我知道市场中的所有人都在等待反转的信号，所以我需要更先一步知道这些信号！！！
+信号捕猎_四观察点跟踪_20260720.md
+除了 A 股市场内化的数据信号方向，应该还有全球多市场的外化数据信号，对吧？也就是说只有这些信号出现明显变化，会凑齐一种相互干涉的金融因果博弈链“定价锚-基本面-情绪点”，再加上全球信息代谢链的本质——信号-蜜罐-背叛-信号-背叛-蜜罐-.....-背叛的金融资本潮汐“。而且不仅是宏观博弈层，还有微观数据痕迹，以及所有内容都在围绕“时间”所做的一切行为，聚合形成了全球金融一体化的环境特点。
+带着到目前的意识，你可以去研究一下刘纪鹏和水皮的近期的直播对谈吗？注意避免污染咱们的高质量意识流，核心是为咱们的空间补充博弈的语料更多（仅靠我个人，很难为你贡献这些涉及行业专业名词语料，特别是金融数据层的核心监控语料）。注意：这些“民间叙事喉舌的观点”代表的是一种势力的显性意图，我对他们的话没有任何置信度设定，因为顶层金融资本的真金白银的下注不会因为这些“舌头”的观点产生动摇，反而这些“舌头”是顶层金融资本豢养，用来转移矛盾的工具，我需要的是他们的语料，能被你识别-学习-转化，注意最终目的是转化，而不是仿写，转化成对高数据信号成本的敏感性意识，因为我无法仅靠我自己的编造的非金融专业领域的语言，塑造和构建你的金融意识，这种状态就是整个空间早期始终被我的语言主导，效率极低的原因之一。
+你有没有发现目前整个研究空间的我本人和你的语料的交互倾向以及模块化的路线开端，在本会话筒中发生了一次结构性变化？注意我的指向是**整个研究空间：Cross-Market Transmission Analysis**
+现在是不是还缺失一些：到底什么信号标志着底？到底什么信号标志着顶？我的猜想，应该是不是顶层控盘的金融资本拍脑门决定的吧？一定有一些核心信号（非噪音信号）是目前我不知道的，但是你肯定知道，只是我用语言语料讲出来，也就勾引出你的语义理解，进而通过调查告诉我，对吧
+
+===== Jackson原话(机械提取,单#行): 帮我校验传闻：长鑫科技目前外围链上交易目标估值为 5 万亿.md =====
+帮我校验传闻：长鑫科技目前外围链上交易目标估值为 5 万亿
+这些外围链上预测值、乐观目标价、实际交易隐含市值、官方 IPO 估值、前序多轮 IPO 前的融资估值之间是不是可以形成一套多层级的信息代谢与各级资本博弈的泊松分布与马尔科夫复合模型？
+
+===== Jackson原话(机械提取,单#行): 摩根士丹利：创新下一代内存——_内存墙_与六大突破方向.md =====
+这份研报的最早发布时间？
+
+===== Jackson原话(机械提取,单#行): 月之暗面（Kimi）全维度深度穿透调研报告.md =====
+月之暗面（Kimi）全维度深度穿透调研报告
+Kimi K3炒作效应的全球传导链与A股叙事映射
+以智谱 GLM-5.2 的上市周期为综合参照集，你会在接下来的 kimi-k3 的周期，从关注方向、信号和时间节奏等方面，为我做什么样的 a股预案
+Kimi-K3 A股作战地图
+下一步继续把这张地图升级成一份**“Kimi-K3 事件驱动交易清单”**，按“观察指标、触发条件、确认条件、失效条件”四列写成可直接执行的版本。
+
+===== Jackson原话(机械提取,单#行): 近期 x 上的 Serenity@aleabitoreddit 大热，全球金融市 =====
+近期 x 上的 Serenity@aleabitoreddit 大热，全球金融市场似乎出现了很多 Serenity 的跟风热，除了跟风买股票以外，github 上还出现了大量蒸馏 skill，深度调研这种典型的 源自 AI 技术基建周期的金融造神运动的底层逻辑，以及从全球金融潮汐 7/24跨市场联动的特性，为 AI 大基建周期中的小资金 A 股投资者的超短策略提供建议
+充分推演这份网传的完整产业传导周期，宏观周期内的充分的资本开支信息的传导，明确的资本开支与供给视角，给中长线投资者创造了充分且良好的投资环境，但往往中长线投资者的资金构成和体量才是决定性因素，高时间阈值与多元分散投资降低了时滞效应对情绪的干扰，但这也加剧了短线投资者 former反复与错失，这是由于短线投资者的需求往往是短期增长优先，但由于产业扰动信息极其复杂，7/24 的全球跨市场的信号源就需要足够清晰，否则必然会在复杂信息中迷失，我需要你进一步为小资金 A 股投资者的超短策略建议提供更完善的细节推导
+利用泊松分布与马尔可夫过程，以北京时间 2026 年 6 月 22 日的 a 股上午 10 点 为例截止点，建立 a 股状态锚点，然后全面逆向反推 7/24 全球市场信息传导-资金潮汐传导，构建完整信息传导链，注意信息节点时间戳与市场资金响应的先后逻辑
+更新锚点，进一步深化逆向推理：如果全球传导只影响 a 股的竞价-开盘的阶段，那么就不应该锚点截止到 10 点，而是截止到 9:15-9:20、 9:20-9:25 、9:30-9:35 的三个 5 分钟
+如果研究的是全球跨市场 7/24跨市场的传导，那么由于a股无卖空规则，小资金超短策略必然不可以完全锁定视野在 AI 产业/板块，否则一旦前序市场信号的AI 产业/板块进入卖空阶段，当信号进入 a 股时就会进入信号断流，因为小资金无法确保实时跟进，因此只能持续观望，会加剧时机与时滞判定矛盾
+以 a 股（6 月 22 日、6 月 23 日）竞价-开盘阶段的真实状态为锚点，规划并分别完成这两天的全球跨市场 7/24（ 6 月 22 日、6 月 23 日）跨市场传导的真实逆推递归，通过两天的分别的传导链对比，复现逻辑共识
+现在进入 6 月 24 日（今日） A 股收盘阶段，我需要你在做一次穿透到更深层次的根因递归与逻辑复现。现在的全球资金潮汐似乎是一条完整的三段传导链：美股的起点-日韩台股的中间态-A股的终点。你需要更深层的根因递归与逻辑复现！我发现你对于 6 月 23 日的韩股 KOSPI 熔断的归因并未穿透。比如：韩股指数实质上是三星和海力士的涨跌，而美国时间6 月18 日- 22 日 MU 连续两天分别上涨 8.70%、6.82%，但是紧接着 6 月 23 日下跌13.18%，而由于时差， 6 月 23 日KOSPI熔断则是由于 美国时间6 月 22 日的上涨导致的，而更加细微的递归逻辑是，原本美国时间6 月 23 日MU 下跌 13.18%，按照正传导逻辑，必然会在今日也就是 6 月 24 日的韩股与 A 股会再次受到波及，但波及状态仅在竞价-开盘阶段产生了轻微影响，甚至再午盘甚至收盘出现了回弹。从博弈角度，我可以理解今晚，也就是中国时间 6 月 24 日晚间/美国时间6 月 24 日白天 MU 将会公布年中报财报，也就是说这一轮 AI 行业的涨幅完全是美国市场、日韩台市场、中国市场全球跨市场资金潮汐，在场大资金与场外观望资金的正博弈与反博弈同时出现的产物
+咱们所需的时间序已推进更新，目前所需信息均已充分暴漏，你根据北京时间6月25日A股盘面状态，对咱们有效假设的递归共识做一轮回溯与校验
+如果将MU财报发布时间的被大面积传播做为信号0，韩股ETF去扛杆/海力士转产相关报道做为信号1，MU财报正式落地做为信号2，也就是说：信号0-试探1-蜜罐1-信号1-试探1-背叛1-信号2-试探2-蜜罐2-信号2-试探2-背叛2……的周期内，我们仅观测到了约30%的信息段
+未观测的70%是致命死局，其中有已能回溯观测的部分（过去时间线），但是大多是未来时间线，所以咱们必须找到上一轮MU信号0级别的信号周期，将上一轮周期做一次完整周期的闭环递归意识建模，然后在能帮助MU信号0周期穿透这70%为观测部分做充分推理，比如：我猜测上一轮周期的信号0是英伟达GTC大会（3月、6月），信号1是美伊冲突，信号2是美伊停火，但是这个周期跨度太长了了，需要你做参与做深度细节推理
+时间线已更新至北京时间 7 月 5 日 23:25
+时间线更新至北京时间 7 月 6 日 22:12，A 股盘后
+时间线更新至北京时间 7 月 7 日 23 :00，A 股盘后
+时间线更新至北京时间 7 月 8 日 09 :00，A 股盘前
+时间线更新至北京时间 7 月 9 日，07 :57，A 股盘前
+时间线更新至北京时间 7 月 9 日，20 :47，A 股盘后
+时间线更新至北京时间 7 月 10 日，07 :09，A 股盘前
+时间线更新至北京时间 7 月 10 日 23 :50，A 股盘后 ，美股盘中
+我认为目前这套工作流，还缺一个信号切换的识别，比如 MU 财报信号周期，应该已经随着时间转移到海力士美股IPO，而且真正的切换日应该是海力士 IPO 和 MU 财报两个周期间，这个切换应该也不是一瞬间发生的，而是一个渐进过渡阶段，但是你完全忽略了信号的变更
+我需要更细指的时间线排列
+时间线更新至北京时间 7 月 13 日，周一 08 :40，A 股盘前
+时间线更新至北京时间 7 月 13 日，周一 19:25，A 股盘后，美股盘前
+时间线更新至北京时间 7 月 14 日，周二 07 :45，A 股盘前
+根据目前状态推演，无论是母周期还是子周期，都已经入充分博弈的中后段了吧，现在是不是需要加入具体数据来做具体推演了呢？比如：美股/A 股两市场机构自由现金流，或者其他更为关键的数据
+时间线更新至北京时间 7 月 15 日，周三 07 :04，A 股盘前，美股盘后
+时间线更新至北京时间 7 月 16 日，周四 07 :30，A 股盘前，美股盘后*注意复核北京时间-美东时间换算后，再引用信源*
+较为新鲜的消息中：阿斯麦财报信号、anthropic未来几周举行 IPO 投资者会议信号，是否有可能加入信号识别，成为的信号过渡的并序级别？
+时间线更新至北京时间 7 月 17 日，周五 07 :15，A 股盘前，美股盘后*注意复核北京时间-美东时间换算后，再引用信源*
+你有没有发现咱们的博弈模型中的锚定信号始终在变化，而且不仅是大/小周期级别的信号切换，甚至连节点内（蜜罐-背叛）的微观锚定信号也在快速变化
