@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "date": "2026-07-18",
+    "t_minus_1_date": "2026-07-17",
+    "pool_symbols": 30
+  },
+  "pool": [
+    {
+      "symbol": "000037.SZ",
+      "name": "深南电A",
+      "close_t1": 9.2,
+      "prev_close": 8.36,
+      "change_pct": 10.05,
+      "reason": "电力+储能+综合能源服务+中报扭亏",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "000676.SZ",
+      "name": "智度股份",
+      "close_t1": 6.84,
+      "prev_close": 6.22,
+      "change_pct": 9.97,
+      "reason": "中报预增+华为鲸鸿+互联网媒体+广告",
+      "board_days": "3天3板"
+    },
+    {
+      "symbol": "000722.SZ",
+      "name": "湖南发展",
+      "close_t1": 13.83,
+      "prev_close": 12.57,
+      "change_pct": 10.02,
+      "reason": "水力发电+中报预增+资产重组+湖南国资",
+      "board_days": "3天2板"
+    },
+    {
+      "symbol": "000779.SZ",
+      "name": "甘咨询",
+      "close_t1": 12.23,
+      "prev_close": 11.12,
+      "change_pct": 9.98,
+      "reason": "参股算力+工程咨询+AI应用+国企改革",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "000899.SZ",
+      "name": "赣能股份",
+      "close_t1": 10.7,
+      "prev_close": 9.73,
+      "change_pct": 9.97,
+      "reason": "上网电量增长+水电资产注入+江西国资",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "001258.SZ",
+      "name": "立新能源",
+      "close_t1": 8.27,
+      "prev_close": 7.52,
+      "change_pct": 9.97,
+      "reason": "风电光伏+定增获批+半年报预增+新疆国资",
+      "board_days": "2天2板"
+    },
+    {
+      "symbol": "001369.SZ",
+      "name": "双欣材料",
+      "close_t1": 12.95,
+      "prev_close": 11.77,
+      "change_pct": 10.03,
+      "reason": "锂电池电解液+聚乙烯醇+国产替代+次新股",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "001388.SZ",
+      "name": "信通电子",
+      "close_t1": 24.74,
+      "prev_close": 22.504232034754317,
+      "change_pct": 9.93,
+      "reason": "电力智能运维+算力租赁+防冰机器人+高送转",
+      "board_days": "5天4板"
+    },
+    {
+      "symbol": "002432.SZ",
+      "name": "九安医疗",
+      "close_t1": 79.2,
+      "prev_close": 72.0,
+      "change_pct": 10.0,
+      "reason": "参股DeepSeek+参股月之暗面+AI医疗+中报预增",
+      "board_days": "4天3板"
+    },
+    {
+      "symbol": "002632.SZ",
+      "name": "道明光学",
+      "close_t1": 10.59,
+      "prev_close": 9.63,
+      "change_pct": 9.97,
+      "reason": "努比亚AI手机+石墨烯散热+反光材料",
+      "board_days": "2天2板"
+    },
+    {
+      "symbol": "002677.SZ",
+      "name": "浙江美大",
+      "close_t1": 7.95,
+      "prev_close": 7.23,
+      "change_pct": 9.96,
+      "reason": "控制权变更+跨境电商+集成灶龙头",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "002766.SZ",
+      "name": "索菱股份",
+      "close_t1": 3.94,
+      "prev_close": 3.58,
+      "change_pct": 10.06,
+      "reason": "车路云+智能座舱+北美市场",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "002829.SZ",
+      "name": "星网宇达",
+      "close_t1": 20.72,
+      "prev_close": 18.84,
+      "change_pct": 9.98,
+      "reason": "商业航天+无人系统+中报扭亏",
+      "board_days": "2天2板"
+    },
+    {
+      "symbol": "003001.SZ",
+      "name": "中岩大地",
+      "close_t1": 19.56,
+      "prev_close": 17.78,
+      "change_pct": 10.01,
+      "reason": "拟收购PCB刀具+岩土工程+核电",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "600095.SH",
+      "name": "湘财股份",
+      "close_t1": 8.69,
+      "prev_close": 7.9,
+      "change_pct": 10.0,
+      "reason": "证券+中报预增+吸收合并",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "600162.SH",
+      "name": "香江控股",
+      "close_t1": 3.06,
+      "prev_close": 2.78,
+      "change_pct": 10.07,
+      "reason": "算力+家居商贸+房地产",
+      "board_days": "3天3板"
+    },
+    {
+      "symbol": "600227.SH",
+      "name": "赤天化",
+      "close_t1": 3.06,
+      "prev_close": 2.78,
+      "change_pct": 10.07,
+      "reason": "尿素+甲醇+中报预计扭亏",
+      "board_days": "4天3板"
+    },
+    {
+      "symbol": "600236.SH",
+      "name": "桂冠电力",
+      "close_t1": 10.62,
+      "prev_close": 9.65,
+      "change_pct": 10.05,
+      "reason": "水电高增+绿色电力+央企",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "600644.SH",
+      "name": "乐山电力",
+      "close_t1": 9.01,
+      "prev_close": 8.19,
+      "change_pct": 10.01,
+      "reason": "电力+天然气+新型储能",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "600722.SH",
+      "name": "金牛化工",
+      "close_t1": 8.53,
+      "prev_close": 7.75,
+      "change_pct": 10.06,
+      "reason": "甲醇+风电+河北国资",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "600744.SH",
+      "name": "华银电力",
+      "close_t1": 5.96,
+      "prev_close": 5.42,
+      "change_pct": 9.96,
+      "reason": "火电+新能源+定增获批+央企",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "600881.SH",
+      "name": "亚泰集团",
+      "close_t1": 1.86,
+      "prev_close": 1.69,
+      "change_pct": 10.06,
+      "reason": "医药+水泥建材+资产出售+中报减亏",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "600982.SH",
+      "name": "宁波能源",
+      "close_t1": 5.09,
+      "prev_close": 4.63,
+      "change_pct": 9.94,
+      "reason": "热电联产+绿色电力+一季报增长+宁波国资",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "600992.SH",
+      "name": "贵绳股份",
+      "close_t1": 11.72,
+      "prev_close": 10.65,
+      "change_pct": 10.05,
+      "reason": "商业航天+钢丝绳+贵州国资",
+      "board_days": "7天4板"
+    },
+    {
+      "symbol": "601369.SH",
+      "name": "陕鼓动力",
+      "close_t1": 9.5,
+      "prev_close": 8.64,
+      "change_pct": 9.95,
+      "reason": "压缩空气储能+资产重组+西安国资",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "603118.SH",
+      "name": "共进股份",
+      "close_t1": 14.95,
+      "prev_close": 13.59,
+      "change_pct": 10.01,
+      "reason": "数据中心交换机+机器人+国企改革+回购",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "603161.SH",
+      "name": "科华控股",
+      "close_t1": 13.31,
+      "prev_close": 12.1,
+      "change_pct": 10.0,
+      "reason": "定增获批+混动零部件+涡轮增压器壳体",
+      "board_days": "首板涨停"
+    },
+    {
+      "symbol": "603567.SH",
+      "name": "珍宝岛",
+      "close_t1": 6.03,
+      "prev_close": 5.48,
+      "change_pct": 10.04,
+      "reason": "中成药集采+中药全产业链",
+      "board_days": "2天2板"
+    },
+    {
+      "symbol": "603580.SH",
+      "name": "艾艾精工",
+      "close_t1": 44.92,
+      "prev_close": 40.84,
+      "change_pct": 9.99,
+      "reason": "控制权拟变更+复牌+轻型输送带+消费电子",
+      "board_days": "4天4板"
+    },
+    {
+      "symbol": "605011.SH",
+      "name": "杭州热电",
+      "close_t1": 18.48,
+      "prev_close": 16.8,
+      "change_pct": 10.0,
+      "reason": "热电联产+绿色能源+国企改革",
+      "board_days": "首板涨停"
+    }
+  ],
+  "auction": {},
+  "close": {},
+  "t_plus_1_open": {},
+  "_close_coverage": "0/30",
+  "_open_coverage": "0/30"
+}

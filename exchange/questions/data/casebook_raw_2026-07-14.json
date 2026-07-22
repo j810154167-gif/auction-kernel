@@ -1,0 +1,463 @@
+{
+  "meta": {
+    "date": "2026-07-14",
+    "t_minus_1_date": "2026-07-13",
+    "pool_symbols": 28
+  },
+  "pool": [
+    {
+      "symbol": "601608.SH",
+      "name": "",
+      "close_t1": 5.54,
+      "prev_close": 5.04,
+      "change_pct": 9.92,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "605090.SH",
+      "name": "",
+      "close_t1": 41.78,
+      "prev_close": 37.98,
+      "change_pct": 10.01,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "603137.SH",
+      "name": "",
+      "close_t1": 29.43,
+      "prev_close": 26.75,
+      "change_pct": 10.02,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "600536.SH",
+      "name": "",
+      "close_t1": 32.25,
+      "prev_close": 29.32,
+      "change_pct": 9.99,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "600629.SH",
+      "name": "",
+      "close_t1": 14.03,
+      "prev_close": 12.75,
+      "change_pct": 10.04,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "603313.SH",
+      "name": "",
+      "close_t1": 7.99,
+      "prev_close": 7.26,
+      "change_pct": 10.06,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "601002.SH",
+      "name": "",
+      "close_t1": 4.85,
+      "prev_close": 4.41,
+      "change_pct": 9.98,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "600513.SH",
+      "name": "",
+      "close_t1": 17.04,
+      "prev_close": 15.49,
+      "change_pct": 10.01,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "603120.SH",
+      "name": "",
+      "close_t1": 55.09,
+      "prev_close": 50.08,
+      "change_pct": 10.0,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "603318.SH",
+      "name": "",
+      "close_t1": 8.55,
+      "prev_close": 7.77,
+      "change_pct": 10.04,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "603677.SH",
+      "name": "",
+      "close_t1": 13.82,
+      "prev_close": 12.56,
+      "change_pct": 10.03,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "600992.SH",
+      "name": "",
+      "close_t1": 11.72,
+      "prev_close": 10.65,
+      "change_pct": 10.05,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "603933.SH",
+      "name": "",
+      "close_t1": 24.71,
+      "prev_close": 22.46,
+      "change_pct": 10.02,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "603065.SH",
+      "name": "",
+      "close_t1": 21.4,
+      "prev_close": 19.45,
+      "change_pct": 10.03,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "600671.SH",
+      "name": "",
+      "close_t1": 21.13,
+      "prev_close": 19.21,
+      "change_pct": 9.99,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "600881.SH",
+      "name": "",
+      "close_t1": 1.65,
+      "prev_close": 1.5,
+      "change_pct": 10.0,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "600664.SH",
+      "name": "",
+      "close_t1": 3.71,
+      "prev_close": 3.37,
+      "change_pct": 10.09,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "600801.SH",
+      "name": "",
+      "close_t1": 18.89,
+      "prev_close": 17.2,
+      "change_pct": 9.83,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "603669.SH",
+      "name": "",
+      "close_t1": 6.8,
+      "prev_close": 6.18,
+      "change_pct": 10.03,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "000920.SZ",
+      "name": "",
+      "close_t1": 14.03,
+      "prev_close": 12.75,
+      "change_pct": 10.04,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "000004.SZ",
+      "name": "",
+      "close_t1": 0.51,
+      "prev_close": 0.46,
+      "change_pct": 10.87,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "002549.SZ",
+      "name": "",
+      "close_t1": 17.88,
+      "prev_close": 16.31,
+      "change_pct": 9.63,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "003020.SZ",
+      "name": "",
+      "close_t1": 20.61,
+      "prev_close": 18.74,
+      "change_pct": 9.98,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "002379.SZ",
+      "name": "",
+      "close_t1": 15.9,
+      "prev_close": 14.45,
+      "change_pct": 10.03,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "000989.SZ",
+      "name": "",
+      "close_t1": 8.98,
+      "prev_close": 8.16,
+      "change_pct": 10.05,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "001388.SZ",
+      "name": "",
+      "close_t1": 29.49,
+      "prev_close": 26.81,
+      "change_pct": 10.0,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "003030.SZ",
+      "name": "",
+      "close_t1": 23.83,
+      "prev_close": 21.66,
+      "change_pct": 10.02,
+      "reason": "",
+      "board_days": ""
+    },
+    {
+      "symbol": "001395.SZ",
+      "name": "",
+      "close_t1": 31.49,
+      "prev_close": 28.63,
+      "change_pct": 9.99,
+      "reason": "",
+      "board_days": ""
+    }
+  ],
+  "auction": {
+    "601608.SH": {
+      "open": 5.42,
+      "volume": 66177,
+      "amount": 35867800.0
+    },
+    "605090.SH": {
+      "open": 41.0,
+      "volume": 23556,
+      "amount": 96579600.0
+    },
+    "603137.SH": {
+      "open": 31.0,
+      "volume": 20962,
+      "amount": 64982200.0
+    },
+    "600536.SH": {
+      "open": 31.66,
+      "volume": 9561,
+      "amount": 30270100.0
+    },
+    "600629.SH": {
+      "open": 14.44,
+      "volume": 12213,
+      "amount": 17635600.0
+    },
+    "603313.SH": {
+      "open": 7.84,
+      "volume": 7694,
+      "amount": 6032100.0
+    },
+    "601002.SH": {
+      "open": 4.89,
+      "volume": 19087,
+      "amount": 9333500.0
+    },
+    "600513.SH": {
+      "open": 17.03,
+      "volume": 8683,
+      "amount": 14787100.0
+    },
+    "603120.SH": {
+      "open": 55.55,
+      "volume": 1133,
+      "amount": 6293800.0
+    },
+    "603318.SH": {
+      "open": 9.3,
+      "volume": 49934,
+      "amount": 46438600.0
+    },
+    "603677.SH": {
+      "open": 14.19,
+      "volume": 1727,
+      "amount": 2450600.0
+    },
+    "600992.SH": {
+      "open": 11.39,
+      "volume": 25678,
+      "amount": 29247200.0
+    },
+    "603933.SH": {
+      "open": 24.27,
+      "volume": 5770,
+      "amount": 14003800.0
+    },
+    "603065.SH": {
+      "open": 21.84,
+      "volume": 14225,
+      "amount": 31067400.0
+    },
+    "600671.SH": {
+      "open": 20.72,
+      "volume": 3507,
+      "amount": 7266500.0
+    },
+    "600881.SH": {
+      "open": 1.75,
+      "volume": 143577,
+      "amount": 25125900.0
+    },
+    "600664.SH": {
+      "open": 3.8,
+      "volume": 125396,
+      "amount": 47650500.0
+    },
+    "600801.SH": {
+      "open": 18.5,
+      "volume": 1682,
+      "amount": 3111700.0
+    },
+    "603669.SH": {
+      "open": 6.74,
+      "volume": 11847,
+      "amount": 7984900.0
+    },
+    "000920.SZ": {
+      "open": 13.7,
+      "volume": 14645,
+      "amount": 20063700.0
+    },
+    "000004.SZ": {
+      "open": 0.51,
+      "volume": 34886,
+      "amount": 1779200.0
+    },
+    "002549.SZ": {
+      "open": 16.67,
+      "volume": 13304,
+      "amount": 22177800.0
+    },
+    "003020.SZ": {
+      "open": 22.1,
+      "volume": 24830,
+      "amount": 54874300.0
+    },
+    "002379.SZ": {
+      "open": 15.77,
+      "volume": 9471,
+      "amount": 14935800.0
+    },
+    "000989.SZ": {
+      "open": 9.15,
+      "volume": 40112,
+      "amount": 36702500.0
+    },
+    "001388.SZ": {
+      "open": 30.1,
+      "volume": 2150,
+      "amount": 6471500.0
+    },
+    "003030.SZ": {
+      "open": 23.54,
+      "volume": 1635,
+      "amount": 3848800.0
+    },
+    "001395.SZ": {
+      "open": 30.0,
+      "volume": 3257,
+      "amount": 9771000.0
+    }
+  },
+  "close": {
+    "600536.SH": 31.5,
+    "001388.SZ": 32.44,
+    "603137.SH": 32.37,
+    "603313.SH": 8.59,
+    "603120.SH": 52.85,
+    "001395.SZ": 30.19,
+    "600664.SH": 4.08,
+    "605090.SH": 39.4,
+    "603318.SH": 8.87,
+    "600801.SH": 18.98,
+    "000920.SZ": 13.8,
+    "000989.SZ": 9.47,
+    "002549.SZ": 16.09,
+    "603065.SH": 23.54,
+    "603933.SH": 23.0,
+    "600992.SH": 10.55,
+    "600671.SH": 19.55,
+    "600513.SH": 17.82,
+    "603669.SH": 7.4,
+    "601608.SH": 5.13,
+    "002379.SZ": 17.49,
+    "600629.SH": 14.27,
+    "601002.SH": 4.99,
+    "600881.SH": 1.67,
+    "003030.SZ": 25.97,
+    "603677.SH": 13.9,
+    "003020.SZ": 20.8
+  },
+  "t_plus_1_open": {
+    "600536.SH": 31.0,
+    "001388.SZ": 34.0,
+    "603137.SH": 32.88,
+    "603313.SH": 7.73,
+    "603120.SH": 52.85,
+    "001395.SZ": 28.84,
+    "600664.SH": 4.32,
+    "605090.SH": 38.52,
+    "603318.SH": 8.59,
+    "600801.SH": 18.79,
+    "000920.SZ": 13.9,
+    "000989.SZ": 9.2,
+    "002549.SZ": 15.15,
+    "603065.SH": 23.04,
+    "603933.SH": 22.6,
+    "600992.SH": 10.28,
+    "600671.SH": 18.57,
+    "600513.SH": 16.99,
+    "603669.SH": 7.15,
+    "601608.SH": 4.9,
+    "002379.SZ": 18.1,
+    "600629.SH": 13.67,
+    "601002.SH": 4.87,
+    "600881.SH": 1.58,
+    "003030.SZ": 24.95,
+    "603677.SH": 13.26,
+    "003020.SZ": 18.72
+  },
+  "_close_coverage": "27/28",
+  "_open_coverage": "27/28"
+}
