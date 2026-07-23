@@ -1,0 +1,25 @@
+# ── datakit crontab reference ───────────────────────────────────
+# This is documentation ONLY. Copy these lines into your own
+# crontab or integrate into master_launcher.py as needed.
+# datakit does NOT run its own scheduler.
+
+# Pre-market health sweep (Mon-Fri at 08:30)
+#30 8 * * 1-5 cd /path/to/project && python -m datakit ops check --json
+
+# Auction-open quick probe (09:15)
+#15 9 * * 1-5 cd /path/to/project && python -m datakit ops check --quiet
+
+# Continuous-trading quick probe (09:30)
+#30 9 * * 1-5 cd /path/to/project && python -m datakit ops check --quiet
+
+# Post-market daily report (15:05)
+# 5 15 * * 1-5 cd /path/to/project && python -m datakit ops report --json
+
+# Hourly silent health check (all hours)
+#0 * * * * cd /path/to/project && python -m datakit ops check --quiet
+
+# Daily cache warm (Mon-Fri at 08:00)
+#0 8 * * 1-5 cd /path/to/project && python -m datakit cache warm --symbols all
+
+# AnchorCalendar reads optional temporal anchors from config.yaml.
+# Anchors are validation data only; datakit does not schedule them.

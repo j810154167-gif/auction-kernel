@@ -1,0 +1,18 @@
+schema: spec-driven
+
+context: |
+  Tech stack: Python 3.10+, asyncio, aiohttp, PyArrow (Parquet), SQLite
+  Domain: 多源金融数据流工具包 (A股实时行情/K线/板块)
+  Conventions: adapter plugin architecture, zero business coupling, ops primitives only
+  Design: three-channel protocol (Raw + Normalized + Provenance), fallback chains, caller-controlled cache mode
+  Constraints: no embedded scheduling, no engine-node coupling, backward-compatible API v1
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours

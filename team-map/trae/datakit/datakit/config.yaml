@@ -1,0 +1,53 @@
+# datakit configuration
+# Endpoints, timeouts, fallback chains, cache TTLs.
+# Environment variables override corresponding fields.
+
+sources:
+  tickflow:
+    base_url: "https://api.tickflow.org"
+    ws_url: "wss://api.tickflow.org/v1/ws/stream"
+    timeout: 20
+    health_timeout: 5
+
+  eastmoney:
+    base_url: "https://push2delay.eastmoney.com"
+    timeout: 15
+    health_timeout: 5
+
+  iwencai:
+    base_url: "https://openapi.iwencai.com"
+    timeout: 15
+    health_timeout: 5
+
+# Fallback chain: primary → secondary → ...
+fallback:
+  quote:  [tickflow, eastmoney]
+  kline:  [tickflow, eastmoney]
+  block:  [iwencai, eastmoney]
+  reason: [iwencai]
+
+# Cache TTL per data type
+cache:
+  ttl:
+    kline_daily: "1d"
+    block_index: "1h"
+    quote_snapshot: "0s"   # never cached
+    raw_record: "1d"
+
+# Logging
+logging:
+  dir: "datakit/logs"
+  retention_days: 30
+
+# Optional caller-defined temporal anchors
+anchors:
+  trading_session:
+    - { label: "T+0", time: "09:15", tz: "Asia/Shanghai" }
+    - { label: "T+5min", time: "09:20", tz: "Asia/Shanghai" }
+    - { label: "T+10min", time: "09:25", tz: "Asia/Shanghai" }
+    - { label: "T+15min", time: "09:30", tz: "Asia/Shanghai" }
+
+# Data channel defaults
+channel:
+  default_intent: "realtime-decision"
+  raw_cache_enabled: false
