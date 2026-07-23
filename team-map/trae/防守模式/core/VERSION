@@ -1,0 +1,5 @@
+version: v20260724-defense-1
+parent: v20260715-defense-1
+mode: constraint_defense
+date: 2026-07-24
+modules: zone(L0) breach(L2) sector(L1)
