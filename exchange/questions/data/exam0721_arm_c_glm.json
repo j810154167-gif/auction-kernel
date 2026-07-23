@@ -1,0 +1,17 @@
+{"regime":{"word":"对撞","why":"7月21日为公募二季报披露最晚时点(日历死线,连老虎也服从),在场机构借周末国新/诚通增持利好去风险换仓,电力煤炭央企大面积低开-5%~-9%呈请客出口;诚通/国新增持聚焦的算力AI央企(美利云/杭钢/联创电子/中嘉博创)竞价顶死涨停且放量,属高成本同席信号,新旧方向在同一竞价窗口对撞分流。"},"recall":[{"name":"美利云","why":"中国诚通旗下+顶死涨停+竞价额8306万居全场前列,高成本同席叠加真金承诺,算力龙头锚。"},{"name":"立新能源","why":"3天3板+竞价额9954万为全场最大+9.1%近顶死,连板真金最重,龙头定分支。"},{"name":"联创电子","why":"CPO光学+江西国资拟入主+顶死涨停,主线题材与国资入主双高成本信号叠加。"},{"name":"杭钢股份","why":"北京诚通+算力租赁+中报扭亏+高开5.9%放量,诚通增持直接标的。"},{"name":"中嘉博创","why":"顶死涨停+算力销售+中报预计扭亏,业绩扭亏是装不起的真信号。"},{"name":"三晖电气","why":"-9.9%怒低开+康养机器人储能题材,假弃守候选,须验真买、弃守成本>收割利润才打。"},{"name":"大唐发电","why":"竞价额1.02亿全场最大却-3.1%低开,旧电力海量出口流动性,盯是否假弃守承接。"}],"reseal_prediction":["美利云","联创电子","中嘉博创","立新能源"],"notes":"账本无T-1 VWAP/密集区/封单/昨全天额(管线该日未跑),竞价真金仅以绝对竞价额+board_days近似判断;regime死线定性来自生料层03对话操盘手原话(单#行权重最高):7-21为机构二季报披露最晚时点,周末国新(超500亿再贷款)/诚通(近百亿)增持央企+科技为高成本稳市信号但处披露前去风险窗口,旧方向利好易被在场筹码当流动性出口(蜜罐),真正再定价须跨过披露窗口。知识截止2026-07-20收盘,未使用09:25后任何信息。宪法零排序零评分、枪在人手,预测仅为竞价快照推演非投资建议。"}
+
+
+URL 自报(本次会话访问过的全部源)​
+按读序读取的工单指定文件(raw):
+https://raw.githubusercontent.com/j810154167-gif/auction-kernel/main/exchange/questions/exam-0721/exam_arm_c_读序_0721.md
+https://raw.githubusercontent.com/j810154167-gif/auction-kernel/main/exchange/questions/exp_brief.txt
+https://raw.githubusercontent.com/j810154167-gif/auction-kernel/main/exchange/对话记录/近期 x 上的 Serenity@aleabitoreddit 大热，全球金融市场似乎出现了很多 S (5).md
+https://raw.githubusercontent.com/j810154167-gif/auction-kernel/main/exchange/对话记录/国新和城通增持的是什么股票和 ETF？有具体信息吗？.md
+https://raw.githubusercontent.com/j810154167-gif/auction-kernel/main/exchange/questions/exam-0721/exam_0721_instruction.txt
+https://raw.githubusercontent.com/j810154167-gif/auction-kernel/main/exchange/questions/exam-0721/exam_0721.json
+定位用到的目录列表 API(只用于精确定位工单未写全子路径的考卷文件,未读仓库其他内容):
+https://api.github.com/repos/j810154167-gif/auction-kernel/contents/exchange/questions
+https://api.github.com/repos/j810154167-gif/auction-kernel/contents/exchange/questions/exam-0721
+产物:/Users/fiona/Desktop/0722 测试/0722测试-c2/exam_0721_answer.json(945 字节,已通过 schema 与键完整性校验)
+注意:工单读序第 2 路径未含 exam-0721/ 子目录段,实际文件在 exchange/questions/exam-0721/ 下;输入账本 exam_0721.json 已注明无 VWAP/密集区/封单字段,按可得账本作答。
+未联网搜索市场数据,知识截止 2026-07-20 收盘,未使用 09:25 后信息。

@@ -1,0 +1,10 @@
+{"regime":{"word":"退潮","why":"涨停池48只竞价开盘价中位数为贴水昨日涨停价5%-8%,溢价符号转负为兑现市;连板股(深南电A/湖南发展/桂冠电力/金牛化工等2板以上)几尽低开弃守6%-9%,无连板溢价。"},"recall":[{"name":"立新能源","why":"3天3板竞价+9.12%近顶死且竞价额9954万为全池顶级付费真承诺,定增获批+半年报预增+新疆国资题材硬,老虎锁死迹象最强。"},{"name":"美利云","why":"算力分支龙头竞价+9.98%顶死昨日涨停、竞价额8306万巨量,东数西算+诚通系定分支,逆退潮顶死=真锁。"},{"name":"联创电子","why":"CPO主线竞价+10.08%顶死开盘,江西国资拟入主+车载光学硬题材,顶死表态强于派发。"},{"name":"华银电力","why":"2天2板火电+定增获批央企,竞价+2.29%高开为电力板块少有的高开连板,竞价额5685万承诺足。"},{"name":"杭钢股份","why":"算力+中报扭亏竞价+5.94%高开、竞价额3064万,与美利云同算力分支协同,成本近昨日涨停。"}],"reseal_prediction":["立新能源","美利云","联创电子"],"notes":"本卷无T-1 VWAP/密集区/封单字段(管线该日未跑),按可得账本(竞价额付费承诺度+开盘相对昨日涨停价位置+连板高度+题材归因)作答;电力主线集体低开(-5%~-9%)判为派发/弃守,仅顶死巨量股判真承诺。中嘉博创虽+10.14%顶死但竞价额仅905万,疑排队价戏法(顶死+真金极低)未召回。"}
+
+
+本次会话访问 URL 自报：​
+https://raw.githubusercontent.com/j810154167-gif/auction-kernel/main/exchange/questions/exam-0721/exam_arm_b_%E8%AF%BB%E5%BA%8F_0721.md（工单）
+https://raw.githubusercontent.com/j810154167-gif/auction-kernel/main/exchange/questions/exp_brief.txt（读序①消费者简报）
+https://raw.githubusercontent.com/j810154167-gif/auction-kernel/main/exchange/questions/exam-0721/exam_0721_instruction.txt（考卷指令）
+https://raw.githubusercontent.com/j810154167-gif/auction-kernel/main/exchange/questions/exam-0721/exam_0721.json（48只竞价快照）
+https://api.github.com/repos/j810154167-gif/auction-kernel/contents/...（仅用于定位 instruction/json 的实际路径，被限流后改用 gh api 同等目录列举；未读仓库其他业务路径）
+作答依据摘要​：数据主线为电力（近20只）集体低开派发 → 判退潮；逆势顶死+巨量+硬题材（立新能源/美利云/联创电子）判真承诺并预测再封；中嘉博创顶死但量仅905万排除（排队价戏法）。遵守知识截止 2026-07-20 收盘，未联网、未用 0721 09:25 之后信息。

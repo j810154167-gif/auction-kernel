@@ -1,0 +1,4322 @@
+{
+  "meta": {
+    "kind": "d1_evidence",
+    "run_date": "2026-07-22",
+    "review_date": "2026-07-21",
+    "trajectory_symbols": 73,
+    "joined": 73,
+    "missing_review": 0,
+    "time_dimension_ready": false,
+    "ranking": "not_defined"
+  },
+  "records": [
+    {
+      "identity": {
+        "symbol": "002036.SZ",
+        "name": "联创电子"
+      },
+      "price_result": {
+        "auction_price": 7.48,
+        "vs_t1_close_pct": 3.74,
+        "vs_t1_vwap_pct": 7.01,
+        "t1_dense_zone": {
+          "low": 6.92,
+          "high": 7.21,
+          "covered_volume": 267781,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 3183300.0,
+        "auction_amount": 23811084.0,
+        "vs_t1_day_volume_pct": 7.66,
+        "vs_t1_day_amount_pct": 8.2
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 6.65,
+          "t1_high": 7.21,
+          "t1_vwap": 6.9898
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "CPO光学器件+车载光学+机器视觉+江西国资拟入主",
+        "industry": "光学光电",
+        "board_days": "2天2板",
+        "sealed_fund": 61544560
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "000426.SZ",
+        "name": "兴业银锡"
+      },
+      "price_result": {
+        "auction_price": 30.6,
+        "vs_t1_close_pct": 3.31,
+        "vs_t1_vwap_pct": 8.48,
+        "t1_dense_zone": {
+          "low": 27.53,
+          "high": 28.93,
+          "covered_volume": 430102,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 844700.0,
+        "auction_amount": 25847820.0,
+        "vs_t1_day_volume_pct": 1.18,
+        "vs_t1_day_amount_pct": 1.28
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 26.63,
+          "t1_high": 29.62,
+          "t1_vwap": 28.2067
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "白银+锡+中报预增",
+        "industry": "贵金属",
+        "board_days": "首板涨停",
+        "sealed_fund": 80739765
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "003031.SZ",
+        "name": "中瓷电子"
+      },
+      "price_result": {
+        "auction_price": 109.99,
+        "vs_t1_close_pct": -0.01,
+        "vs_t1_vwap_pct": 9.59,
+        "t1_dense_zone": {
+          "low": 92.68,
+          "high": 103.95,
+          "covered_volume": 88812,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 141200.0,
+        "auction_amount": 15530588.0,
+        "vs_t1_day_volume_pct": 0.96,
+        "vs_t1_day_amount_pct": 1.05
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 90.0,
+          "t1_high": 110.0,
+          "t1_vwap": 100.3656
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "电子陶瓷+光模块+央企",
+        "industry": "通信设备",
+        "board_days": "首板涨停",
+        "sealed_fund": 20003500
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002156.SZ",
+        "name": "通富微电"
+      },
+      "price_result": {
+        "auction_price": 71.71,
+        "vs_t1_close_pct": 3.48,
+        "vs_t1_vwap_pct": 11.77,
+        "t1_dense_zone": {
+          "low": 62.5,
+          "high": 69.3,
+          "covered_volume": 1275517,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 4272441.0,
+        "auction_amount": 306376744.11,
+        "vs_t1_day_volume_pct": 2.05,
+        "vs_t1_day_amount_pct": 2.3
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 57.0,
+          "t1_high": 69.3,
+          "t1_vwap": 64.1569
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "先进封装+AMD产业链+定增获批",
+        "industry": "半导体",
+        "board_days": "首板涨停",
+        "sealed_fund": 441501498
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002432.SZ",
+        "name": "九安医疗"
+      },
+      "price_result": {
+        "auction_price": 83.31,
+        "vs_t1_close_pct": 4.46,
+        "vs_t1_vwap_pct": 6.58,
+        "t1_dense_zone": {
+          "low": 78.4,
+          "high": 79.75,
+          "covered_volume": 352233,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 1814100.0,
+        "auction_amount": 151132671.0,
+        "vs_t1_day_volume_pct": 3.12,
+        "vs_t1_day_amount_pct": 3.32
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 73.27,
+          "t1_high": 79.75,
+          "t1_vwap": 78.1631
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "参股月之暗面/DeepSeek+AI医疗+中报预增",
+        "industry": "医疗器械",
+        "board_days": "6天4板",
+        "sealed_fund": 329844245
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "000048.SZ",
+        "name": "京基智农"
+      },
+      "price_result": {
+        "auction_price": 20.33,
+        "vs_t1_close_pct": 0.54,
+        "vs_t1_vwap_pct": 6.32,
+        "t1_dense_zone": {
+          "low": 18.36,
+          "high": 20.22,
+          "covered_volume": 184802,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 371500.0,
+        "auction_amount": 7552595.0,
+        "vs_t1_day_volume_pct": 1.21,
+        "vs_t1_day_amount_pct": 1.29
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 17.02,
+          "t1_high": 20.22,
+          "t1_vwap": 19.1217
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "生猪养殖+机器人+股权转让",
+        "industry": "养殖业",
+        "board_days": "首板涨停",
+        "sealed_fund": 2452686
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "001389.SZ",
+        "name": "广合科技"
+      },
+      "price_result": {
+        "auction_price": 174.32,
+        "vs_t1_close_pct": 0.01,
+        "vs_t1_vwap_pct": 6.43,
+        "t1_dense_zone": {
+          "low": 161.0,
+          "high": 174.31,
+          "covered_volume": 78741,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 90000.0,
+        "auction_amount": 15688800.0,
+        "vs_t1_day_volume_pct": 0.7,
+        "vs_t1_day_amount_pct": 0.74
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 148.0,
+          "t1_high": 174.31,
+          "t1_vwap": 163.7868
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "算力PCB+中报预增+海外产能释放",
+        "industry": "元件",
+        "board_days": "首板涨停",
+        "sealed_fund": 77655105
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002197.SZ",
+        "name": "证通电子"
+      },
+      "price_result": {
+        "auction_price": 6.87,
+        "vs_t1_close_pct": 8.36,
+        "vs_t1_vwap_pct": 11.18,
+        "t1_dense_zone": {
+          "low": 6.18,
+          "high": 6.34,
+          "covered_volume": 403448,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 4506299.0,
+        "auction_amount": 30958274.13,
+        "vs_t1_day_volume_pct": 6.8,
+        "vs_t1_day_amount_pct": 7.56
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 5.55,
+          "t1_high": 6.34,
+          "t1_vwap": 6.179
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "算力租赁+数据中心REITs+金融科技+中报扭亏",
+        "industry": "计算机设",
+        "board_days": "首板涨停",
+        "sealed_fund": 36562146
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002879.SZ",
+        "name": "长缆科技"
+      },
+      "price_result": {
+        "auction_price": 14.48,
+        "vs_t1_close_pct": 6.78,
+        "vs_t1_vwap_pct": 6.79,
+        "t1_dense_zone": {
+          "low": 13.56,
+          "high": 13.56,
+          "covered_volume": 25091,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 1371300.0,
+        "auction_amount": 19856424.0,
+        "vs_t1_day_volume_pct": 54.65,
+        "vs_t1_day_amount_pct": 58.36
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 13.56,
+          "t1_high": 13.56,
+          "t1_vwap": 13.5597
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "回购+增持+液冷+电缆附件",
+        "industry": "电网设备",
+        "board_days": "首板涨停",
+        "sealed_fund": 72730904
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "000938.SZ",
+        "name": "紫光股份"
+      },
+      "price_result": {
+        "auction_price": 43.09,
+        "vs_t1_close_pct": 3.93,
+        "vs_t1_vwap_pct": 12.16,
+        "t1_dense_zone": {
+          "low": 36.0,
+          "high": 38.88,
+          "covered_volume": 2967810,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 13986620.0,
+        "auction_amount": 602683455.8,
+        "vs_t1_day_volume_pct": 2.84,
+        "vs_t1_day_amount_pct": 3.18
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 34.96,
+          "t1_high": 41.46,
+          "t1_vwap": 38.4187
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "超节点+CPO交换机+AI服务器+中报预增",
+        "industry": "IT服务Ⅱ",
+        "board_days": "首板涨停",
+        "sealed_fund": 594677322
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002319.SZ",
+        "name": "乐通股份"
+      },
+      "price_result": {
+        "auction_price": 10.73,
+        "vs_t1_close_pct": 2.09,
+        "vs_t1_vwap_pct": 8.22,
+        "t1_dense_zone": {
+          "low": 9.51,
+          "high": 10.22,
+          "covered_volume": 91247,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 207200.0,
+        "auction_amount": 2223256.0,
+        "vs_t1_day_volume_pct": 1.38,
+        "vs_t1_day_amount_pct": 1.49
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 9.16,
+          "t1_high": 10.51,
+          "t1_vwap": 9.9148
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "凹印油墨+中报预增",
+        "industry": "化学制品",
+        "board_days": "首板涨停",
+        "sealed_fund": 25570830
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002913.SZ",
+        "name": "奥士康"
+      },
+      "price_result": {
+        "auction_price": 43.44,
+        "vs_t1_close_pct": 2.0,
+        "vs_t1_vwap_pct": 10.59,
+        "t1_dense_zone": {
+          "low": 35.98,
+          "high": 39.5,
+          "covered_volume": 52711,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 49500.0,
+        "auction_amount": 2150280.0,
+        "vs_t1_day_volume_pct": 0.56,
+        "vs_t1_day_amount_pct": 0.62
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 35.55,
+          "t1_high": 42.59,
+          "t1_vwap": 39.2794
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "拟回购+PCB+AI服务器+AIPC",
+        "industry": "元件",
+        "board_days": "首板涨停",
+        "sealed_fund": 150228899
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "000021.SZ",
+        "name": "深科技"
+      },
+      "price_result": {
+        "auction_price": 39.43,
+        "vs_t1_close_pct": 2.02,
+        "vs_t1_vwap_pct": 10.88,
+        "t1_dense_zone": {
+          "low": 34.7,
+          "high": 38.65,
+          "covered_volume": 1118066,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 4559567.0,
+        "auction_amount": 179783726.81,
+        "vs_t1_day_volume_pct": 2.48,
+        "vs_t1_day_amount_pct": 2.75
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 31.82,
+          "t1_high": 38.65,
+          "t1_vwap": 35.5621
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "高端存储封测+扩产+央企",
+        "industry": "消费电子",
+        "board_days": "首板涨停",
+        "sealed_fund": 349797960
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "000815.SZ",
+        "name": "美利云"
+      },
+      "price_result": {
+        "auction_price": 16.13,
+        "vs_t1_close_pct": 10.03,
+        "vs_t1_vwap_pct": 10.03,
+        "t1_dense_zone": {
+          "low": 14.66,
+          "high": 14.66,
+          "covered_volume": 246480,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 11646051.0,
+        "auction_amount": 187850802.63,
+        "vs_t1_day_volume_pct": 47.25,
+        "vs_t1_day_amount_pct": 51.99
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 14.6,
+          "t1_high": 14.66,
+          "t1_vwap": 14.6599
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "算力租赁+东数西算+中国诚通旗下",
+        "industry": "IT服务Ⅱ",
+        "board_days": "2天2板",
+        "sealed_fund": 215367040
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002273.SZ",
+        "name": "水晶光电"
+      },
+      "price_result": {
+        "auction_price": 27.56,
+        "vs_t1_close_pct": 0.0,
+        "vs_t1_vwap_pct": 4.5,
+        "t1_dense_zone": {
+          "low": 25.75,
+          "high": 27.21,
+          "covered_volume": 512606,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 867100.0,
+        "auction_amount": 23897276.0,
+        "vs_t1_day_volume_pct": 1.02,
+        "vs_t1_day_amount_pct": 1.06
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 24.6,
+          "t1_high": 27.56,
+          "t1_vwap": 26.372
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "AI光学+CPO+苹果产业链",
+        "industry": "光学光电",
+        "board_days": "首板涨停",
+        "sealed_fund": 49280394
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002068.SZ",
+        "name": "黑猫股份"
+      },
+      "price_result": {
+        "auction_price": 8.18,
+        "vs_t1_close_pct": 1.36,
+        "vs_t1_vwap_pct": 11.54,
+        "t1_dense_zone": {
+          "low": 6.78,
+          "high": 7.42,
+          "covered_volume": 294250,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 627200.0,
+        "auction_amount": 5130496.0,
+        "vs_t1_day_volume_pct": 1.28,
+        "vs_t1_day_amount_pct": 1.43
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 6.69,
+          "t1_high": 8.07,
+          "t1_vwap": 7.334
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "超级电容+导电炭黑+炭黑龙头+景德镇国资",
+        "industry": "橡胶",
+        "board_days": "首板涨停",
+        "sealed_fund": 76339206
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002409.SZ",
+        "name": "雅克科技"
+      },
+      "price_result": {
+        "auction_price": 146.42,
+        "vs_t1_close_pct": 2.0,
+        "vs_t1_vwap_pct": 12.56,
+        "t1_dense_zone": {
+          "low": 117.45,
+          "high": 133.67,
+          "covered_volume": 273551,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 823200.0,
+        "auction_amount": 120532944.0,
+        "vs_t1_day_volume_pct": 1.81,
+        "vs_t1_day_amount_pct": 2.04
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 117.45,
+          "t1_high": 143.55,
+          "t1_vwap": 130.0796
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "半导体前驱体+存储芯片+HBM+客户长鑫",
+        "industry": "半导体",
+        "board_days": "首板涨停",
+        "sealed_fund": 186101665
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "600460.SH",
+        "name": "士兰微"
+      },
+      "price_result": {
+        "auction_price": 32.87,
+        "vs_t1_close_pct": 0.0,
+        "vs_t1_vwap_pct": 7.52,
+        "t1_dense_zone": {
+          "low": 29.84,
+          "high": 32.87,
+          "covered_volume": 806977,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 2356000.0,
+        "auction_amount": 77441720.0,
+        "vs_t1_day_volume_pct": 1.76,
+        "vs_t1_day_amount_pct": 1.89
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 27.85,
+          "t1_high": 32.87,
+          "t1_vwap": 30.5721
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "SiC+中报预增+IDM",
+        "industry": "半导体",
+        "board_days": "首板涨停",
+        "sealed_fund": 121588989
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002484.SZ",
+        "name": "江海股份"
+      },
+      "price_result": {
+        "auction_price": 72.55,
+        "vs_t1_close_pct": 0.0,
+        "vs_t1_vwap_pct": 8.83,
+        "t1_dense_zone": {
+          "low": 62.39,
+          "high": 67.04,
+          "covered_volume": 343248,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 466205.0,
+        "auction_amount": 33823172.75,
+        "vs_t1_day_volume_pct": 0.82,
+        "vs_t1_day_amount_pct": 0.89
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 60.83,
+          "t1_high": 72.55,
+          "t1_vwap": 66.6639
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "AI服务器电源+超级电容+浙江国资",
+        "industry": "元件",
+        "board_days": "首板涨停",
+        "sealed_fund": 95279552
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "000889.SZ",
+        "name": "中嘉博创"
+      },
+      "price_result": {
+        "auction_price": 4.16,
+        "vs_t1_close_pct": 9.47,
+        "vs_t1_vwap_pct": 12.47,
+        "t1_dense_zone": {
+          "low": 3.8,
+          "high": 3.8,
+          "covered_volume": 429294,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 6538900.0,
+        "auction_amount": 27201824.0,
+        "vs_t1_day_volume_pct": 9.72,
+        "vs_t1_day_amount_pct": 10.93
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 3.46,
+          "t1_high": 3.8,
+          "t1_vwap": 3.6986
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "算力销售+通信网络维护+追索款项确认+中报预计扭亏",
+        "industry": "通信服务",
+        "board_days": "2天2板",
+        "sealed_fund": 53871460
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002745.SZ",
+        "name": "木林森"
+      },
+      "price_result": {
+        "auction_price": 10.93,
+        "vs_t1_close_pct": 0.09,
+        "vs_t1_vwap_pct": 4.97,
+        "t1_dense_zone": {
+          "low": 9.9,
+          "high": 10.53,
+          "covered_volume": 548315,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 1418200.0,
+        "auction_amount": 15500926.0,
+        "vs_t1_day_volume_pct": 1.58,
+        "vs_t1_day_amount_pct": 1.66
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 9.85,
+          "t1_high": 10.92,
+          "t1_vwap": 10.4123
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "LED封装+PCB涨价+实控人增持+中报预增",
+        "industry": "光学光电",
+        "board_days": "首板涨停",
+        "sealed_fund": 92342195
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "001258.SZ",
+        "name": "立新能源"
+      },
+      "price_result": {
+        "auction_price": 10.9,
+        "vs_t1_close_pct": 8.89,
+        "vs_t1_vwap_pct": 9.77,
+        "t1_dense_zone": {
+          "low": 9.97,
+          "high": 10.01,
+          "covered_volume": 911146,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 8427500.0,
+        "auction_amount": 91859750.0,
+        "vs_t1_day_volume_pct": 5.66,
+        "vs_t1_day_amount_pct": 6.21
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 9.55,
+          "t1_high": 10.01,
+          "t1_vwap": 9.9299
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "风电光伏+定增获批+半年报预增+新疆国资",
+        "industry": "电力",
+        "board_days": "4天4板",
+        "sealed_fund": 52054792
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002987.SZ",
+        "name": "京北方"
+      },
+      "price_result": {
+        "auction_price": 10.68,
+        "vs_t1_close_pct": 0.47,
+        "vs_t1_vwap_pct": 2.12,
+        "t1_dense_zone": {
+          "low": 10.63,
+          "high": 10.63,
+          "covered_volume": 202385,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 1402900.0,
+        "auction_amount": 14982972.0,
+        "vs_t1_day_volume_pct": 5.24,
+        "vs_t1_day_amount_pct": 5.35
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 9.48,
+          "t1_high": 10.63,
+          "t1_vwap": 10.4578
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "金融科技+数字人民币+AI应用",
+        "industry": "软件开发",
+        "board_days": "首板涨停",
+        "sealed_fund": 19816658
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002008.SZ",
+        "name": "大族激光"
+      },
+      "price_result": {
+        "auction_price": 104.45,
+        "vs_t1_close_pct": 3.53,
+        "vs_t1_vwap_pct": 10.63,
+        "t1_dense_zone": {
+          "low": 88.89,
+          "high": 95.18,
+          "covered_volume": 318095,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 680000.0,
+        "auction_amount": 71026000.0,
+        "vs_t1_day_volume_pct": 1.29,
+        "vs_t1_day_amount_pct": 1.43
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 87.29,
+          "t1_high": 100.89,
+          "t1_vwap": 94.4098
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "中报业绩大增+AI算力PCB+激光设备+消费电子",
+        "industry": "自动化设",
+        "board_days": "首板涨停",
+        "sealed_fund": 397833685
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "000526.SZ",
+        "name": "学大教育"
+      },
+      "price_result": {
+        "auction_price": 31.84,
+        "vs_t1_close_pct": 2.78,
+        "vs_t1_vwap_pct": 5.81,
+        "t1_dense_zone": {
+          "low": 30.13,
+          "high": 30.98,
+          "covered_volume": 47660,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 152500.0,
+        "auction_amount": 4855600.0,
+        "vs_t1_day_volume_pct": 1.92,
+        "vs_t1_day_amount_pct": 2.03
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 27.82,
+          "t1_high": 30.98,
+          "t1_vwap": 30.0924
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "AI教育+个性化教育+回购",
+        "industry": "教育",
+        "board_days": "首板涨停",
+        "sealed_fund": 46265965
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "000603.SZ",
+        "name": "盛达资源"
+      },
+      "price_result": {
+        "auction_price": 20.88,
+        "vs_t1_close_pct": 1.75,
+        "vs_t1_vwap_pct": 7.34,
+        "t1_dense_zone": {
+          "low": 18.96,
+          "high": 19.97,
+          "covered_volume": 248186,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 576100.0,
+        "auction_amount": 12028968.0,
+        "vs_t1_day_volume_pct": 1.42,
+        "vs_t1_day_amount_pct": 1.52
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 18.27,
+          "t1_high": 20.52,
+          "t1_vwap": 19.4531
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "白银+金属铅锌+中报预增",
+        "industry": "贵金属",
+        "board_days": "首板涨停",
+        "sealed_fund": 59308401
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002138.SZ",
+        "name": "顺络电子"
+      },
+      "price_result": {
+        "auction_price": 43.97,
+        "vs_t1_close_pct": 4.97,
+        "vs_t1_vwap_pct": 12.98,
+        "t1_dense_zone": {
+          "low": 37.66,
+          "high": 39.34,
+          "covered_volume": 257525,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 1249913.0,
+        "auction_amount": 54958674.61,
+        "vs_t1_day_volume_pct": 2.94,
+        "vs_t1_day_amount_pct": 3.32
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 36.71,
+          "t1_high": 41.89,
+          "t1_vwap": 38.9199
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "被动电子元器件+TLVR电感+光模块上游",
+        "industry": "元件",
+        "board_days": "首板涨停",
+        "sealed_fund": 143377028
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002396.SZ",
+        "name": "星网锐捷"
+      },
+      "price_result": {
+        "auction_price": 30.16,
+        "vs_t1_close_pct": -4.59,
+        "vs_t1_vwap_pct": -0.04,
+        "t1_dense_zone": {
+          "low": 29.91,
+          "high": 31.61,
+          "covered_volume": 1284789,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 5175600.0,
+        "auction_amount": 156096096.0,
+        "vs_t1_day_volume_pct": 2.43,
+        "vs_t1_day_amount_pct": 2.43
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 27.54,
+          "t1_high": 31.61,
+          "t1_vwap": 30.172
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "数据中心交换机+CPO+半年报预增+福建国资",
+        "industry": "通信设备",
+        "board_days": "首板涨停",
+        "sealed_fund": 84237615
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "600330.SH",
+        "name": "天通股份"
+      },
+      "price_result": {
+        "auction_price": 19.04,
+        "vs_t1_close_pct": -0.47,
+        "vs_t1_vwap_pct": 8.95,
+        "t1_dense_zone": {
+          "low": 15.92,
+          "high": 17.78,
+          "covered_volume": 602984,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 1509623.0,
+        "auction_amount": 28743221.92,
+        "vs_t1_day_volume_pct": 1.51,
+        "vs_t1_day_amount_pct": 1.64
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 15.68,
+          "t1_high": 19.13,
+          "t1_vwap": 17.4761
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "光模块上游+铌酸锂+软磁材料+先进封装",
+        "industry": "电子化学",
+        "board_days": "首板涨停",
+        "sealed_fund": 39791490
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "000555.SZ",
+        "name": "神州信息"
+      },
+      "price_result": {
+        "auction_price": 10.48,
+        "vs_t1_close_pct": -0.1,
+        "vs_t1_vwap_pct": 1.79,
+        "t1_dense_zone": {
+          "low": 10.4,
+          "high": 10.49,
+          "covered_volume": 266679,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 1502100.0,
+        "auction_amount": 15742008.0,
+        "vs_t1_day_volume_pct": 3.86,
+        "vs_t1_day_amount_pct": 3.93
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 9.49,
+          "t1_high": 10.49,
+          "t1_vwap": 10.2955
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "跨境支付+银行IT龙头+AI应用",
+        "industry": "IT服务Ⅱ",
+        "board_days": "首板涨停",
+        "sealed_fund": 39299788
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "003033.SZ",
+        "name": "征和工业"
+      },
+      "price_result": {
+        "auction_price": 67.63,
+        "vs_t1_close_pct": 0.36,
+        "vs_t1_vwap_pct": 7.98,
+        "t1_dense_zone": {
+          "low": 59.28,
+          "high": 62.74,
+          "covered_volume": 19208,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 11000.0,
+        "auction_amount": 743930.0,
+        "vs_t1_day_volume_pct": 0.35,
+        "vs_t1_day_amount_pct": 0.37
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 58.64,
+          "t1_high": 67.39,
+          "t1_vwap": 62.6323
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "人形机器人+灵巧手+链传动龙头+张雪机车合作",
+        "industry": "摩托车及",
+        "board_days": "首板涨停",
+        "sealed_fund": 52692241
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "000510.SZ",
+        "name": "新金路"
+      },
+      "price_result": {
+        "auction_price": 15.74,
+        "vs_t1_close_pct": 1.55,
+        "vs_t1_vwap_pct": 13.43,
+        "t1_dense_zone": {
+          "low": 12.91,
+          "high": 13.98,
+          "covered_volume": 313645,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 595100.0,
+        "auction_amount": 9366874.0,
+        "vs_t1_day_volume_pct": 1.15,
+        "vs_t1_day_amount_pct": 1.3
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 12.7,
+          "t1_high": 15.5,
+          "t1_vwap": 13.8769
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "钨锡钽铌+氯碱化工+减持终止",
+        "industry": "化学原料",
+        "board_days": "首板涨停",
+        "sealed_fund": 94832224
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002970.SZ",
+        "name": "锐明技术"
+      },
+      "price_result": {
+        "auction_price": 49.69,
+        "vs_t1_close_pct": 0.02,
+        "vs_t1_vwap_pct": 6.87,
+        "t1_dense_zone": {
+          "low": 44.45,
+          "high": 48.16,
+          "covered_volume": 48079,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 40000.0,
+        "auction_amount": 1987600.0,
+        "vs_t1_day_volume_pct": 0.5,
+        "vs_t1_day_amount_pct": 0.54
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 42.64,
+          "t1_high": 49.68,
+          "t1_vwap": 46.4936
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "HVDC电源+数字能源+Robobus自动驾驶+商用车AIoT",
+        "industry": "计算机设",
+        "board_days": "首板涨停",
+        "sealed_fund": 6284520
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002213.SZ",
+        "name": "大为股份"
+      },
+      "price_result": {
+        "auction_price": 25.98,
+        "vs_t1_close_pct": 3.96,
+        "vs_t1_vwap_pct": 12.99,
+        "t1_dense_zone": {
+          "low": 21.33,
+          "high": 23.14,
+          "covered_volume": 102919,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 305300.0,
+        "auction_amount": 7931694.0,
+        "vs_t1_day_volume_pct": 1.83,
+        "vs_t1_day_amount_pct": 2.06
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 20.71,
+          "t1_high": 24.99,
+          "t1_vwap": 22.9939
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "半导体存储+定增获批+锂矿审批推进",
+        "industry": "半导体",
+        "board_days": "首板涨停",
+        "sealed_fund": 109076327
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002851.SZ",
+        "name": "麦格米特"
+      },
+      "price_result": {
+        "auction_price": 138.77,
+        "vs_t1_close_pct": 2.63,
+        "vs_t1_vwap_pct": 7.59,
+        "t1_dense_zone": {
+          "low": 126.13,
+          "high": 130.97,
+          "covered_volume": 218201,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 537500.0,
+        "auction_amount": 74588875.0,
+        "vs_t1_day_volume_pct": 1.49,
+        "vs_t1_day_amount_pct": 1.6
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 122.0,
+          "t1_high": 135.22,
+          "t1_vwap": 128.9801
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "AI电源+英伟达产业链+H股上市",
+        "industry": "其他电源",
+        "board_days": "首板涨停",
+        "sealed_fund": 309015426
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002167.SZ",
+        "name": "东方锆业"
+      },
+      "price_result": {
+        "auction_price": 17.37,
+        "vs_t1_close_pct": 3.09,
+        "vs_t1_vwap_pct": 7.76,
+        "t1_dense_zone": {
+          "low": 15.33,
+          "high": 16.16,
+          "covered_volume": 879275,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 4015423.0,
+        "auction_amount": 69747897.51,
+        "vs_t1_day_volume_pct": 2.74,
+        "vs_t1_day_amount_pct": 2.96
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 15.22,
+          "t1_high": 16.85,
+          "t1_vwap": 16.1189
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "氧化锆粉体涨价+中报预增+固态电池",
+        "industry": "小金属",
+        "board_days": "首板涨停",
+        "sealed_fund": 149923279
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002203.SZ",
+        "name": "海亮股份"
+      },
+      "price_result": {
+        "auction_price": 18.55,
+        "vs_t1_close_pct": 1.2,
+        "vs_t1_vwap_pct": 5.81,
+        "t1_dense_zone": {
+          "low": 17.01,
+          "high": 17.71,
+          "covered_volume": 257465,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 307000.0,
+        "auction_amount": 5694850.0,
+        "vs_t1_day_volume_pct": 0.72,
+        "vs_t1_day_amount_pct": 0.76
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 16.44,
+          "t1_high": 18.33,
+          "t1_vwap": 17.5312
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "PCB铜箔+固态电池+拟中期分红",
+        "industry": "工业金属",
+        "board_days": "首板涨停",
+        "sealed_fund": 94656065
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002245.SZ",
+        "name": "蔚蓝锂芯"
+      },
+      "price_result": {
+        "auction_price": 17.0,
+        "vs_t1_close_pct": -1.33,
+        "vs_t1_vwap_pct": 3.29,
+        "t1_dense_zone": {
+          "low": 15.94,
+          "high": 16.66,
+          "covered_volume": 605208,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 953300.0,
+        "auction_amount": 16206100.0,
+        "vs_t1_day_volume_pct": 0.95,
+        "vs_t1_day_amount_pct": 0.98
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 15.71,
+          "t1_high": 17.23,
+          "t1_vwap": 16.4582
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "BBU电源+人形机器人+中报预增",
+        "industry": "电池",
+        "board_days": "首板涨停",
+        "sealed_fund": 89082253
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "001399.SZ",
+        "name": "惠科股份"
+      },
+      "price_result": {
+        "auction_price": 26.81,
+        "vs_t1_close_pct": -3.8,
+        "vs_t1_vwap_pct": 6.68,
+        "t1_dense_zone": {
+          "low": 22.81,
+          "high": 26.0,
+          "covered_volume": 723360,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 2171631.0,
+        "auction_amount": 58221427.11,
+        "vs_t1_day_volume_pct": 1.82,
+        "vs_t1_day_amount_pct": 1.94
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 22.81,
+          "t1_high": 27.87,
+          "t1_vwap": 25.131
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "先进封装+半导体显示面板",
+        "industry": "光学光电",
+        "board_days": "首板涨停",
+        "sealed_fund": 6194163
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "002371.SZ",
+        "name": "北方华创"
+      },
+      "price_result": {
+        "auction_price": 788.0,
+        "vs_t1_close_pct": 5.83,
+        "vs_t1_vwap_pct": 10.42,
+        "t1_dense_zone": {
+          "low": 681.3,
+          "high": 714.98,
+          "covered_volume": 89241,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 976900.0,
+        "auction_amount": 769797200.0,
+        "vs_t1_day_volume_pct": 6.66,
+        "vs_t1_day_amount_pct": 7.36
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 678.43,
+          "t1_high": 744.6,
+          "t1_vwap": 713.6131
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "半导体设备+平台型龙头+北京国资",
+        "industry": "半导体",
+        "board_days": "首板涨停",
+        "sealed_fund": 1089773477
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "600552.SH",
+        "name": "凯盛科技"
+      },
+      "price_result": {
+        "auction_price": 16.15,
+        "vs_t1_close_pct": 0.5,
+        "vs_t1_vwap_pct": 8.07,
+        "t1_dense_zone": {
+          "low": 14.18,
+          "high": 15.12,
+          "covered_volume": 526315,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 1689800.0,
+        "auction_amount": 27290270.0,
+        "vs_t1_day_volume_pct": 1.93,
+        "vs_t1_day_amount_pct": 2.08
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 13.8,
+          "t1_high": 16.07,
+          "t1_vwap": 14.9441
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "氧化锆涨价+锆系列产品+央企",
+        "industry": "光学光电",
+        "board_days": "首板涨停",
+        "sealed_fund": 147247561
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603407.SH",
+        "name": "长裕集团"
+      },
+      "price_result": {
+        "auction_price": 64.34,
+        "vs_t1_close_pct": 10.0,
+        "vs_t1_vwap_pct": 11.84,
+        "t1_dense_zone": {
+          "low": 57.88,
+          "high": 58.49,
+          "covered_volume": 32342,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 731500.0,
+        "auction_amount": 47064710.0,
+        "vs_t1_day_volume_pct": 13.61,
+        "vs_t1_day_amount_pct": 15.22
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 54.68,
+          "t1_high": 58.49,
+          "t1_vwap": 57.5297
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "存储芯片材料+氧氯化锆涨价+牙科医疗",
+        "industry": "化学原料",
+        "board_days": "首板涨停",
+        "sealed_fund": 101409962
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "605318.SH",
+        "name": "法狮龙"
+      },
+      "price_result": {
+        "auction_price": 80.0,
+        "vs_t1_close_pct": 1.01,
+        "vs_t1_vwap_pct": 11.81,
+        "t1_dense_zone": {
+          "low": 68.35,
+          "high": 72.37,
+          "covered_volume": 18619,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 21800.0,
+        "auction_amount": 1744000.0,
+        "vs_t1_day_volume_pct": 0.71,
+        "vs_t1_day_amount_pct": 0.79
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 66.33,
+          "t1_high": 79.2,
+          "t1_vwap": 71.5493
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "AI智算+装配式建筑+集成吊顶",
+        "industry": "装修建材",
+        "board_days": "首板涨停",
+        "sealed_fund": 16402320
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603890.SH",
+        "name": "春秋电子"
+      },
+      "price_result": {
+        "auction_price": 19.8,
+        "vs_t1_close_pct": -0.95,
+        "vs_t1_vwap_pct": 8.67,
+        "t1_dense_zone": {
+          "low": 16.72,
+          "high": 18.85,
+          "covered_volume": 200407,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 169500.0,
+        "auction_amount": 3356100.0,
+        "vs_t1_day_volume_pct": 0.51,
+        "vs_t1_day_amount_pct": 0.55
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 16.42,
+          "t1_high": 19.99,
+          "t1_vwap": 18.221
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "液冷服务器+人形机器人+AIPC",
+        "industry": "消费电子",
+        "board_days": "首板涨停",
+        "sealed_fund": 14289631
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603929.SH",
+        "name": "亚翔集成"
+      },
+      "price_result": {
+        "auction_price": 169.0,
+        "vs_t1_close_pct": -0.35,
+        "vs_t1_vwap_pct": 5.98,
+        "t1_dense_zone": {
+          "low": 152.64,
+          "high": 163.4,
+          "covered_volume": 51777,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 86300.0,
+        "auction_amount": 14584700.0,
+        "vs_t1_day_volume_pct": 1.0,
+        "vs_t1_day_amount_pct": 1.06
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 147.06,
+          "t1_high": 169.59,
+          "t1_vwap": 159.4664
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "半导体洁净室+中报预增+新加坡项目",
+        "industry": "专业工程",
+        "board_days": "首板涨停",
+        "sealed_fund": 69856834
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "600884.SH",
+        "name": "杉杉股份"
+      },
+      "price_result": {
+        "auction_price": 12.3,
+        "vs_t1_close_pct": -1.2,
+        "vs_t1_vwap_pct": 1.51,
+        "t1_dense_zone": {
+          "low": 12.04,
+          "high": 12.33,
+          "covered_volume": 585348,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 2202243.0,
+        "auction_amount": 27087588.9,
+        "vs_t1_day_volume_pct": 2.26,
+        "vs_t1_day_amount_pct": 2.3
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 11.41,
+          "t1_high": 12.45,
+          "t1_vwap": 12.1175
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "安徽国资入主+负极材料+中报预增",
+        "industry": "电池",
+        "board_days": "首板涨停",
+        "sealed_fund": 102985254
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603118.SH",
+        "name": "共进股份"
+      },
+      "price_result": {
+        "auction_price": 15.98,
+        "vs_t1_close_pct": 7.03,
+        "vs_t1_vwap_pct": 14.77,
+        "t1_dense_zone": {
+          "low": 13.77,
+          "high": 14.93,
+          "covered_volume": 773173,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 7321400.0,
+        "auction_amount": 116995972.0,
+        "vs_t1_day_volume_pct": 5.71,
+        "vs_t1_day_amount_pct": 6.56
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 12.73,
+          "t1_high": 14.93,
+          "t1_vwap": 13.9236
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "数据中心交换机+机器人+国企改革+回购",
+        "industry": "通信设备",
+        "board_days": "3天2板",
+        "sealed_fund": 112466047
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603005.SH",
+        "name": "晶方科技"
+      },
+      "price_result": {
+        "auction_price": 31.1,
+        "vs_t1_close_pct": 0.16,
+        "vs_t1_vwap_pct": 7.64,
+        "t1_dense_zone": {
+          "low": 28.41,
+          "high": 31.05,
+          "covered_volume": 409023,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 1056369.0,
+        "auction_amount": 32853075.9,
+        "vs_t1_day_volume_pct": 1.56,
+        "vs_t1_day_amount_pct": 1.67
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 26.37,
+          "t1_high": 31.05,
+          "t1_vwap": 28.892
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "先进封装+分拆上市+车规CIS",
+        "industry": "半导体",
+        "board_days": "首板涨停",
+        "sealed_fund": 95239696
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603435.SH",
+        "name": "嘉德利"
+      },
+      "price_result": {
+        "auction_price": 45.8,
+        "vs_t1_close_pct": 1.66,
+        "vs_t1_vwap_pct": 8.8,
+        "t1_dense_zone": {
+          "low": 39.85,
+          "high": 42.2,
+          "covered_volume": 27426,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 33000.0,
+        "auction_amount": 1511400.0,
+        "vs_t1_day_volume_pct": 0.72,
+        "vs_t1_day_amount_pct": 0.79
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 38.96,
+          "t1_high": 45.05,
+          "t1_vwap": 42.0962
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "BOPP电工膜+电容膜+复合铜箔+次新股",
+        "industry": "电子化学",
+        "board_days": "首板涨停",
+        "sealed_fund": 49842058
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603936.SH",
+        "name": "博敏电子"
+      },
+      "price_result": {
+        "auction_price": 14.0,
+        "vs_t1_close_pct": -0.28,
+        "vs_t1_vwap_pct": 10.78,
+        "t1_dense_zone": {
+          "low": 11.48,
+          "high": 12.98,
+          "covered_volume": 450621,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 907800.0,
+        "auction_amount": 12709200.0,
+        "vs_t1_day_volume_pct": 1.23,
+        "vs_t1_day_amount_pct": 1.36
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 11.48,
+          "t1_high": 14.04,
+          "t1_vwap": 12.6374
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "PCB+光模块+存储芯片",
+        "industry": "元件",
+        "board_days": "首板涨停",
+        "sealed_fund": 8598096
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "605111.SH",
+        "name": "新洁能"
+      },
+      "price_result": {
+        "auction_price": 54.89,
+        "vs_t1_close_pct": 1.93,
+        "vs_t1_vwap_pct": 10.84,
+        "t1_dense_zone": {
+          "low": 45.18,
+          "high": 49.74,
+          "covered_volume": 156322,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 468300.0,
+        "auction_amount": 25704987.0,
+        "vs_t1_day_volume_pct": 1.81,
+        "vs_t1_day_amount_pct": 2.0
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 45.14,
+          "t1_high": 53.85,
+          "t1_vwap": 49.52
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "功率半导体+超跌反弹+封测",
+        "industry": "半导体",
+        "board_days": "首板涨停",
+        "sealed_fund": 69992291
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603124.SH",
+        "name": "江南新材"
+      },
+      "price_result": {
+        "auction_price": 117.4,
+        "vs_t1_close_pct": 2.13,
+        "vs_t1_vwap_pct": 10.79,
+        "t1_dense_zone": {
+          "low": 100.53,
+          "high": 106.1,
+          "covered_volume": 30160,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 76800.0,
+        "auction_amount": 9016320.0,
+        "vs_t1_day_volume_pct": 1.55,
+        "vs_t1_day_amount_pct": 1.72
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 98.86,
+          "t1_high": 114.95,
+          "t1_vwap": 105.9629
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "PCB铜基新材料+AI算力+半年报预增",
+        "industry": "金属新材",
+        "board_days": "首板涨停",
+        "sealed_fund": 71189914
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603256.SH",
+        "name": "宏和科技"
+      },
+      "price_result": {
+        "auction_price": 159.12,
+        "vs_t1_close_pct": 0.28,
+        "vs_t1_vwap_pct": 7.31,
+        "t1_dense_zone": {
+          "low": 146.1,
+          "high": 158.68,
+          "covered_volume": 87439,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 241000.0,
+        "auction_amount": 38347920.0,
+        "vs_t1_day_volume_pct": 1.67,
+        "vs_t1_day_amount_pct": 1.79
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 134.01,
+          "t1_high": 158.68,
+          "t1_vwap": 148.2798
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "特种电子布+PCB概念+AI算力",
+        "industry": "玻璃玻纤",
+        "board_days": "首板涨停",
+        "sealed_fund": 225023790
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603663.SH",
+        "name": "三祥新材"
+      },
+      "price_result": {
+        "auction_price": 42.9,
+        "vs_t1_close_pct": 2.14,
+        "vs_t1_vwap_pct": 8.27,
+        "t1_dense_zone": {
+          "low": 38.61,
+          "high": 40.76,
+          "covered_volume": 115019,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 292700.0,
+        "auction_amount": 12556830.0,
+        "vs_t1_day_volume_pct": 1.53,
+        "vs_t1_day_amount_pct": 1.66
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 37.01,
+          "t1_high": 42.0,
+          "t1_vwap": 39.6244
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "锆铪分离+半导体+固态电池+业绩预增",
+        "industry": "化学原料",
+        "board_days": "首板涨停",
+        "sealed_fund": 133142688
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "605376.SH",
+        "name": "博迁新材"
+      },
+      "price_result": {
+        "auction_price": 148.76,
+        "vs_t1_close_pct": 0.56,
+        "vs_t1_vwap_pct": 9.75,
+        "t1_dense_zone": {
+          "low": 132.71,
+          "high": 147.93,
+          "covered_volume": 120760,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 159844.0,
+        "auction_amount": 23778393.44,
+        "vs_t1_day_volume_pct": 0.8,
+        "vs_t1_day_amount_pct": 0.88
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 121.03,
+          "t1_high": 147.93,
+          "t1_vwap": 135.5443
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "MLCC镍粉+H股上市",
+        "industry": "金属新材",
+        "board_days": "首板涨停",
+        "sealed_fund": 18262846
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603773.SH",
+        "name": "沃格光电"
+      },
+      "price_result": {
+        "auction_price": 84.9,
+        "vs_t1_close_pct": 0.3,
+        "vs_t1_vwap_pct": 10.21,
+        "t1_dense_zone": {
+          "low": 75.7,
+          "high": 84.65,
+          "covered_volume": 157100,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 367100.0,
+        "auction_amount": 31166790.0,
+        "vs_t1_day_volume_pct": 1.41,
+        "vs_t1_day_amount_pct": 1.56
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 69.26,
+          "t1_high": 84.65,
+          "t1_vwap": 77.0326
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "TGV玻璃基板+先进封装+PET铜箔",
+        "industry": "光学光电",
+        "board_days": "首板涨停",
+        "sealed_fund": 7550780
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "600664.SH",
+        "name": "哈药股份"
+      },
+      "price_result": {
+        "auction_price": 5.8,
+        "vs_t1_close_pct": -0.68,
+        "vs_t1_vwap_pct": 10.23,
+        "t1_dense_zone": {
+          "low": 4.78,
+          "high": 5.24,
+          "covered_volume": 4284123,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 14790018.0,
+        "auction_amount": 85782104.4,
+        "vs_t1_day_volume_pct": 2.07,
+        "vs_t1_day_amount_pct": 2.29
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 4.78,
+          "t1_high": 5.84,
+          "t1_vwap": 5.2617
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "创新药+化学制药+基药目录+中报预增",
+        "industry": "化学制药",
+        "board_days": "8天6板",
+        "sealed_fund": 53502739
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "601038.SH",
+        "name": "一拖股份"
+      },
+      "price_result": {
+        "auction_price": 13.58,
+        "vs_t1_close_pct": -1.52,
+        "vs_t1_vwap_pct": -0.4,
+        "t1_dense_zone": {
+          "low": 13.69,
+          "high": 13.79,
+          "covered_volume": 116820,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 503400.0,
+        "auction_amount": 6836172.0,
+        "vs_t1_day_volume_pct": 2.77,
+        "vs_t1_day_amount_pct": 2.76
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 12.6,
+          "t1_high": 13.79,
+          "t1_vwap": 13.635
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "农机龙头+出海增长+高端装备+央企改革",
+        "industry": "专用设备",
+        "board_days": "首板涨停",
+        "sealed_fund": 30056684
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603516.SH",
+        "name": "淳中科技"
+      },
+      "price_result": {
+        "auction_price": 90.52,
+        "vs_t1_close_pct": -0.63,
+        "vs_t1_vwap_pct": 1.91,
+        "t1_dense_zone": {
+          "low": 88.55,
+          "high": 91.09,
+          "covered_volume": 68069,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 271000.0,
+        "auction_amount": 24530920.0,
+        "vs_t1_day_volume_pct": 2.54,
+        "vs_t1_day_amount_pct": 2.59
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 83.0,
+          "t1_high": 91.09,
+          "t1_vwap": 88.8235
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "董事长提议回购+自研ASIC芯片+持有沐曦股份+半年报扭亏",
+        "industry": "计算机设",
+        "board_days": "首板涨停",
+        "sealed_fund": 142433607
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "600846.SH",
+        "name": "同济科技"
+      },
+      "price_result": {
+        "auction_price": 12.22,
+        "vs_t1_close_pct": 3.74,
+        "vs_t1_vwap_pct": 9.36,
+        "t1_dense_zone": {
+          "low": 10.75,
+          "high": 11.27,
+          "covered_volume": 54332,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 148400.0,
+        "auction_amount": 1813448.0,
+        "vs_t1_day_volume_pct": 1.65,
+        "vs_t1_day_amount_pct": 1.8
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 10.57,
+          "t1_high": 11.78,
+          "t1_vwap": 11.1741
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "建设工程+城市更新+上海国资",
+        "industry": "工程咨询",
+        "board_days": "首板涨停",
+        "sealed_fund": 46872525
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603161.SH",
+        "name": "科华控股"
+      },
+      "price_result": {
+        "auction_price": 14.34,
+        "vs_t1_close_pct": -1.24,
+        "vs_t1_vwap_pct": 4.46,
+        "t1_dense_zone": {
+          "low": 13.0,
+          "high": 13.95,
+          "covered_volume": 50427,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 161600.0,
+        "auction_amount": 2317344.0,
+        "vs_t1_day_volume_pct": 1.97,
+        "vs_t1_day_amount_pct": 2.05
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 12.97,
+          "t1_high": 14.52,
+          "t1_vwap": 13.7275
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "定增获批+混动零部件+涡轮增压器壳体",
+        "industry": "汽车零部",
+        "board_days": "3天2板",
+        "sealed_fund": 32501364
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603123.SH",
+        "name": "翠微股份"
+      },
+      "price_result": {
+        "auction_price": 8.85,
+        "vs_t1_close_pct": 2.08,
+        "vs_t1_vwap_pct": 4.07,
+        "t1_dense_zone": {
+          "low": 8.57,
+          "high": 8.67,
+          "covered_volume": 302536,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 2173400.0,
+        "auction_amount": 19234590.0,
+        "vs_t1_day_volume_pct": 4.78,
+        "vs_t1_day_amount_pct": 4.98
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 7.85,
+          "t1_high": 8.67,
+          "t1_vwap": 8.5036
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "跨境支付+数字人民币+半年报减亏+北京国资",
+        "industry": "多元金融",
+        "board_days": "首板涨停",
+        "sealed_fund": 50219241
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "600744.SH",
+        "name": "华银电力"
+      },
+      "price_result": {
+        "auction_price": 6.88,
+        "vs_t1_close_pct": -4.71,
+        "vs_t1_vwap_pct": -0.22,
+        "t1_dense_zone": {
+          "low": 6.68,
+          "high": 6.99,
+          "covered_volume": 2322397,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 8087781.0,
+        "auction_amount": 55643933.28,
+        "vs_t1_day_volume_pct": 2.24,
+        "vs_t1_day_amount_pct": 2.23
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 6.5,
+          "t1_high": 7.22,
+          "t1_vwap": 6.8951
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "火电+新能源+定增获批+央企",
+        "industry": "电力",
+        "board_days": "3天3板",
+        "sealed_fund": 9160014
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603221.SH",
+        "name": "爱丽家居"
+      },
+      "price_result": {
+        "auction_price": 11.57,
+        "vs_t1_close_pct": 9.98,
+        "vs_t1_vwap_pct": 9.98,
+        "t1_dense_zone": {
+          "low": 10.52,
+          "high": 10.52,
+          "covered_volume": 2268,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 45800.0,
+        "auction_amount": 529906.0,
+        "vs_t1_day_volume_pct": 20.19,
+        "vs_t1_day_amount_pct": 22.21
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 10.52,
+          "t1_high": 10.52,
+          "t1_vwap": 10.52
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "拟收购欧康诺+股权转让+PVC弹性地板+Home Depot供应链",
+        "industry": "家居用品",
+        "board_days": "首板涨停",
+        "sealed_fund": 209193356
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603629.SH",
+        "name": "利通电子"
+      },
+      "price_result": {
+        "auction_price": 114.0,
+        "vs_t1_close_pct": 5.97,
+        "vs_t1_vwap_pct": 10.07,
+        "t1_dense_zone": {
+          "low": 100.88,
+          "high": 104.53,
+          "covered_volume": 219913,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 1208500.0,
+        "auction_amount": 137769000.0,
+        "vs_t1_day_volume_pct": 3.33,
+        "vs_t1_day_amount_pct": 3.66
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 98.86,
+          "t1_high": 107.58,
+          "t1_vwap": 103.5665
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "算力租赁+英伟达合作+中报预增",
+        "industry": "消费电子",
+        "board_days": "首板涨停",
+        "sealed_fund": 227595064
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "600641.SH",
+        "name": "先导基电"
+      },
+      "price_result": {
+        "auction_price": 31.0,
+        "vs_t1_close_pct": -2.61,
+        "vs_t1_vwap_pct": 8.18,
+        "t1_dense_zone": {
+          "low": 26.05,
+          "high": 29.85,
+          "covered_volume": 731272,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 1500000.0,
+        "auction_amount": 46500000.0,
+        "vs_t1_day_volume_pct": 1.24,
+        "vs_t1_day_amount_pct": 1.34
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 26.05,
+          "t1_high": 31.83,
+          "t1_vwap": 28.6549
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "拟收购先导微电子+半导体设备+铋材料",
+        "industry": "半导体",
+        "board_days": "首板涨停",
+        "sealed_fund": 7786381
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603061.SH",
+        "name": "金海通"
+      },
+      "price_result": {
+        "auction_price": 322.0,
+        "vs_t1_close_pct": 3.41,
+        "vs_t1_vwap_pct": 11.33,
+        "t1_dense_zone": {
+          "low": 276.39,
+          "high": 301.84,
+          "covered_volume": 25146,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 72000.0,
+        "auction_amount": 23184000.0,
+        "vs_t1_day_volume_pct": 1.75,
+        "vs_t1_day_amount_pct": 1.94
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 258.35,
+          "t1_high": 311.39,
+          "t1_vwap": 289.2324
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "半导体测试设备+中报预增+超跌反弹+可转债募资",
+        "industry": "半导体",
+        "board_days": "首板涨停",
+        "sealed_fund": 137782290
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603391.SH",
+        "name": "力聚热能"
+      },
+      "price_result": {
+        "auction_price": 53.0,
+        "vs_t1_close_pct": 1.18,
+        "vs_t1_vwap_pct": 14.89,
+        "t1_dense_zone": {
+          "low": 42.86,
+          "high": 45.54,
+          "covered_volume": 15282,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 25400.0,
+        "auction_amount": 1346200.0,
+        "vs_t1_day_volume_pct": 1.0,
+        "vs_t1_day_amount_pct": 1.15
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 42.86,
+          "t1_high": 52.38,
+          "t1_vwap": 46.1328
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "蒸汽锅炉+工业互联网",
+        "industry": "专用设备",
+        "board_days": "首板涨停",
+        "sealed_fund": 13986036
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603192.SH",
+        "name": "汇得科技"
+      },
+      "price_result": {
+        "auction_price": 21.87,
+        "vs_t1_close_pct": 4.09,
+        "vs_t1_vwap_pct": 11.09,
+        "t1_dense_zone": {
+          "low": 18.47,
+          "high": 19.96,
+          "covered_volume": 25902,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 110400.0,
+        "auction_amount": 2414448.0,
+        "vs_t1_day_volume_pct": 2.62,
+        "vs_t1_day_amount_pct": 2.91
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 18.29,
+          "t1_high": 21.01,
+          "t1_vwap": 19.6872
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "聚氨酯+机器人材料+新能源电池制件",
+        "industry": "化学制品",
+        "board_days": "首板涨停",
+        "sealed_fund": 39021873
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603311.SH",
+        "name": "金海高科"
+      },
+      "price_result": {
+        "auction_price": 25.7,
+        "vs_t1_close_pct": 4.01,
+        "vs_t1_vwap_pct": 13.49,
+        "t1_dense_zone": {
+          "low": 20.83,
+          "high": 23.27,
+          "covered_volume": 56978,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 43400.0,
+        "auction_amount": 1115380.0,
+        "vs_t1_day_volume_pct": 0.46,
+        "vs_t1_day_amount_pct": 0.52
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 20.38,
+          "t1_high": 24.71,
+          "t1_vwap": 22.6442
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "实控人此前变更+AI应用+新能源汽车过滤",
+        "industry": "家电零部",
+        "board_days": "首板涨停",
+        "sealed_fund": 22350195
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "603986.SH",
+        "name": "兆易创新"
+      },
+      "price_result": {
+        "auction_price": 479.94,
+        "vs_t1_close_pct": 0.93,
+        "vs_t1_vwap_pct": 7.91,
+        "t1_dense_zone": {
+          "low": 439.06,
+          "high": 475.53,
+          "covered_volume": 443229,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 1958800.0,
+        "auction_amount": 940106472.0,
+        "vs_t1_day_volume_pct": 2.66,
+        "vs_t1_day_amount_pct": 2.87
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 401.0,
+          "t1_high": 475.53,
+          "t1_vwap": 444.7744
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "长鑫+存储芯片+中报预增",
+        "industry": "半导体",
+        "board_days": "首板涨停",
+        "sealed_fund": 1048528433
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "605288.SH",
+        "name": "凯迪股份"
+      },
+      "price_result": {
+        "auction_price": 63.13,
+        "vs_t1_close_pct": 3.93,
+        "vs_t1_vwap_pct": 10.44,
+        "t1_dense_zone": {
+          "low": 55.19,
+          "high": 57.7,
+          "covered_volume": 8750,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 12100.0,
+        "auction_amount": 763873.0,
+        "vs_t1_day_volume_pct": 0.83,
+        "vs_t1_day_amount_pct": 0.92
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 53.75,
+          "t1_high": 60.74,
+          "t1_vwap": 57.1647
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "机器人+智能线性驱动+新能源汽车",
+        "industry": "自动化设",
+        "board_days": "首板涨停",
+        "sealed_fund": 25940839
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    },
+    {
+      "identity": {
+        "symbol": "600667.SH",
+        "name": "太极实业"
+      },
+      "price_result": {
+        "auction_price": 16.62,
+        "vs_t1_close_pct": -0.42,
+        "vs_t1_vwap_pct": 9.76,
+        "t1_dense_zone": {
+          "low": 14.39,
+          "high": 16.32,
+          "covered_volume": 2216760,
+          "coverage": 0.6
+        }
+      },
+      "volume_commitment": {
+        "auction_volume": 6833400.0,
+        "auction_amount": 113571108.0,
+        "vs_t1_day_volume_pct": 1.86,
+        "vs_t1_day_amount_pct": 2.05
+      },
+      "time_evidence": {
+        "observations": 1,
+        "first": "2026-07-22T09:25:00+08:00",
+        "last": "2026-07-22T09:25:00+08:00",
+        "price_change": 0.0,
+        "volume_change": 0.0,
+        "has_process_evidence": false
+      },
+      "space": {
+        "self": {
+          "t1_low": 13.65,
+          "t1_high": 16.69,
+          "t1_vwap": 15.1427
+        },
+        "market": {
+          "theme_peer_position": null,
+          "status": "需要同题材T日观测后计算"
+        }
+      },
+      "theme_facts": {
+        "reason": "存储芯片+先进封装+无锡国资",
+        "industry": "工程咨询",
+        "board_days": "首板涨停",
+        "sealed_fund": 50156754
+      },
+      "consumption": {
+        "review_date": "2026-07-21",
+        "review_fields": [
+          "price_space",
+          "participation",
+          "time_path",
+          "theme_facts"
+        ],
+        "auction_observations": 1,
+        "trajectory_file": "trajectory_iwencai.jsonl"
+      }
+    }
+  ],
+  "missing_review_symbols": []
+}
